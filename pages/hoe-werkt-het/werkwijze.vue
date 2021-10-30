@@ -1,3 +1,3 @@
 <template>
-  <h1>INDEX</h1>
+  <h1>Werkwijze</h1>
 </template>

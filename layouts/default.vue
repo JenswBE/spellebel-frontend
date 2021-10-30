@@ -1,117 +1,214 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
+      disable-resize-watcher
       v-model="drawer"
-      :mini-variant="miniVariant"
-      :clipped="clipped"
-      fixed
       app
+      v-if="$vuetify.breakpoint.smAndDown"
     >
-      <v-list>
-        <v-list-item
-          v-for="(item, i) in items"
-          :key="i"
-          :to="item.to"
-          router
-          exact
-        >
-          <v-list-item-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-action>
-          <v-list-item-content>
-            <v-list-item-title v-text="item.title" />
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
+      <NavList :items="navItems" />
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>mdi-application</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>mdi-minus</v-icon>
-      </v-btn>
-      <v-toolbar-title v-text="title" />
+    <v-app-bar fixed app elevation="0">
+      <v-app-bar-nav-icon
+        v-if="$vuetify.breakpoint.smAndDown"
+        @click.stop="drawer = !drawer"
+      />
+      <v-toolbar-items>
+        <v-btn id="spellebel-logo" text nuxt exact to="/">Spellebel</v-btn>
+      </v-toolbar-items>
       <v-spacer />
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+      <v-toolbar-items v-if="$vuetify.breakpoint.mdAndUp">
+        <template v-for="navItem in navItems">
+          <v-btn
+            v-if="!navItem.subItems"
+            :key="navItem.to"
+            text
+            :to="navItem.to"
+            nuxt
+            exact
+          >
+            {{ navItem.name }}
+          </v-btn>
+          <v-menu
+            v-else
+            :key="navItem.to"
+            offset-y
+            bottom
+            open-on-hover
+            content-class="elevation-0"
+          >
+            <template v-slot:activator="{ on, attrs }">
+              <v-btn text v-bind="attrs" v-on="on" :to="navItem.to" nuxt>
+                {{ navItem.name }}
+              </v-btn>
+            </template>
+            <v-list class="pt-0">
+              <v-list-item
+                v-for="subItem in navItem.subItems"
+                :key="subItem.to"
+                :to="subItem.to"
+                nuxt
+                exact
+              >
+                <v-list-item-title>{{ subItem.name }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+        </template>
+      </v-toolbar-items>
     </v-app-bar>
     <v-main>
-      <v-container>
-        <Nuxt />
-      </v-container>
+      <nuxt />
     </v-main>
-    <v-navigation-drawer
-      v-model="rightDrawer"
-      :right="right"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              mdi-repeat
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer
-      :absolute="!fixed"
-      app
-    >
-      <span>&copy; {{ new Date().getFullYear() }}</span>
+    <v-footer color="white" id="spellebel-footer">
+      <v-container class="pt-16 pb-5">
+        <v-row>
+          <v-col>
+            <a to="/" nuxt>
+              <v-img src="/logo.gif" alt="Spellebel" width="100" height="100" />
+            </a>
+          </v-col>
+          <v-col>
+            <v-row>
+              <v-col>
+                <p>
+                  <a
+                    class="text-decoration-none"
+                    :href="`tel:${contact.phone_number}`"
+                  >
+                    {{ contact.phone_number }}
+                  </a>
+                </p>
+                <p>
+                  <a
+                    class="text-decoration-none"
+                    :href="`mailto:${contact.email}`"
+                    target="_blank"
+                  >
+                    {{ contact.email }}
+                  </a>
+                </p>
+              </v-col>
+              <v-col>
+                <p>
+                  {{ contact.address.street }}
+                  {{ contact.address.number }}<br />
+                  {{ contact.address.postal_code }}
+                  {{ contact.address.city }}
+                </p>
+              </v-col>
+            </v-row>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <p>
+              &copy; {{ new Date().getFullYear() }} Spellebel - Made by
+              <ExtLink to="https://jensw.be">Jensw.be</ExtLink>
+            </p>
+          </v-col>
+        </v-row>
+      </v-container>
     </v-footer>
   </v-app>
 </template>
 
-<script>
+<style>
+#spellebel-logo::before {
+  opacity: 0;
+}
+
+#spellebel-logo:hover::before {
+  opacity: 0.09;
+}
+
+#spellebel-footer {
+  border-top: 1px solid #e3e3e3 !important;
+}
+</style>
+
+<script lang="ts">
+import { NavItem } from '../interfaces/NavItem.interface'
+import NavList from '../components/NavList.vue'
+import { CONTACT } from '../constants/contact'
+import {
+  mdiAccountCircle,
+  mdiCalendar,
+  mdiHandWash,
+  mdiHelpCircle,
+  mdiHome,
+  mdiMenu,
+  mdiTeddyBear,
+} from '@mdi/js'
+
 export default {
-  data () {
+  data() {
     return {
-      clipped: false,
+      // General
       drawer: false,
-      fixed: false,
-      items: [
+      icons: {
+        menu: mdiMenu,
+      },
+      navItems: [
         {
-          icon: 'mdi-apps',
-          title: 'Welcome',
-          to: '/'
+          icon: mdiHome,
+          name: 'Start',
+          to: '/',
         },
         {
-          icon: 'mdi-chart-bubble',
-          title: 'Inspire',
-          to: '/inspire'
-        }
-      ],
-      miniVariant: false,
-      right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+          icon: mdiAccountCircle,
+          name: 'Wie zijn we?',
+          subItems: [
+            {
+              name: 'RVB',
+              to: '/wie-zijn-we/rvb',
+            },
+            {
+              name: 'Vrijwilligers',
+              to: '/wie-zijn-we/vrijwilligers',
+            },
+            {
+              name: 'Contactgegevens',
+              to: '/wie-zijn-we/contactgegevens',
+            },
+          ],
+        },
+        {
+          icon: mdiHelpCircle,
+          name: 'Hoe werkt het?',
+          subItems: [
+            {
+              name: 'Werkwijze',
+              to: '/hoe-werkt-het/werkwijze',
+            },
+            {
+              name: 'Abonnement',
+              to: '/hoe-werkt-het/abonnement',
+            },
+          ],
+        },
+        {
+          icon: mdiTeddyBear,
+          name: 'Catalogus',
+          to: '/catalogus',
+        },
+        {
+          icon: mdiCalendar,
+          name: 'Uitlening verlengen',
+          to: '/uitlening-verlengen',
+        },
+        {
+          icon: mdiHandWash,
+          name: 'Corona-maatregelen',
+          to: '/corona-maatregelen',
+        },
+      ] as NavItem[],
+
+      // Contact details
+      contact: CONTACT,
     }
-  }
+  },
+
+  components: { NavList },
 }
 </script>

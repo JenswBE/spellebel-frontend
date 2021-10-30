@@ -55,9 +55,14 @@ export default {
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
+    treeShake: true,
+    defaultAssets: false,
     customVariables: ['~/assets/variables.scss'],
+    icons: {
+      iconfont: 'mdiSvg',
+    },
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
