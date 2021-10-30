@@ -9,10 +9,10 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - spellebel-frontend',
-    title: 'spellebel-frontend',
+    titleTemplate: '%s - Spellebel',
+    title: 'Spellebel',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'nl'
     },
     meta: [
       { charset: 'utf-8' },
