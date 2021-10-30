@@ -8,7 +8,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col v-for="prod in products" :key="prod.title" cols="12" sm="4" md="3">
+      <v-col v-for="prod in products" :key="prod.img" cols="12" sm="4" md="3">
         <v-card>
           <v-img :src="prod.img" class="align-end" height="300px"> </v-img>
         </v-card>
