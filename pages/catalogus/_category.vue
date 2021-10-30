@@ -19,7 +19,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { CATEGORIES } from '../../constants/products'
+import { CATEGORIES } from '../../constants/catalog'
 
 export default Vue.extend({
   data: () => ({

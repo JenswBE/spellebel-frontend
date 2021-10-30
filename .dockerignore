@@ -1,0 +1,16 @@
+.git/
+.github/
+.nuxt/
+.yarn/*
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+/node_modules/
+.dockerignore
+.editorconfig
+.gitignore
+.prettierrc
+Dockerfile
+*.Dockerfile
+generate_openapi_models.sh
