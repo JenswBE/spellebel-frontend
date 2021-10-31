@@ -6,9 +6,9 @@ RUN yarn
 RUN yarn generate
 
 # Build final image
-FROM nginx:stable-alpine
+FROM nginxinc/nginx-unprivileged:stable-alpine
 ARG SERVICE_NAME
-COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 COPY --from=builder /app/dist /usr/share/nginx/html
 EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
