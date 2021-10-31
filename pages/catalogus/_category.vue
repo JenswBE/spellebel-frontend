@@ -17,7 +17,7 @@
       <v-col v-for="prod in 10" :key="prod" cols="12" sm="4" md="3">
         <v-card>
           <v-img
-            :src="`https://source.unsplash.com/700x300/?toys#${prod}`"
+            src="https://source.unsplash.com/700x300/?toys"
             class="align-end"
             height="300px"
           >
