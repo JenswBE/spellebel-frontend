@@ -6,10 +6,31 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col v-for="prod in products" :key="prod.img" cols="12" sm="4" md="3">
+      <v-col>
+        <v-btn text to="/catalogus" exact>
+          <v-icon left>{{ icons.arrowLeft }}</v-icon>
+          Terug naar overzicht
+        </v-btn>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col v-for="prod in 10" :key="prod" cols="12" sm="4" md="3">
         <v-card>
-          <v-img :src="prod.img" class="align-end" height="300px"> </v-img>
+          <v-img
+            :src="`https://source.unsplash.com/700x300/?toys#${prod}`"
+            class="align-end"
+            height="300px"
+          >
+          </v-img>
         </v-card>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <v-btn text to="/catalogus" exact>
+          <v-icon left>{{ icons.arrowLeft }}</v-icon>
+          Terug naar overzicht
+        </v-btn>
       </v-col>
     </v-row>
   </v-container>
@@ -18,6 +39,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { CATEGORIES } from '../../constants/catalog'
+import { mdiArrowLeft } from '@mdi/js'
 
 export default Vue.extend({
   data: () => ({
@@ -33,6 +55,9 @@ export default Vue.extend({
         img: '/img/categories/constructie.jpg',
       },
     ],
+    icons: {
+      arrowLeft: mdiArrowLeft,
+    },
   }),
 
   computed: {
