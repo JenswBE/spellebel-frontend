@@ -176,16 +176,7 @@ export default {
         {
           icon: mdiHelpCircle,
           name: 'Hoe werkt het?',
-          subItems: [
-            {
-              name: 'Werkwijze',
-              to: '/hoe-werkt-het/werkwijze',
-            },
-            {
-              name: 'Abonnement',
-              to: '/hoe-werkt-het/abonnement',
-            },
-          ],
+          to: '/hoe-werkt-het',
         },
         {
           icon: mdiTeddyBear,
