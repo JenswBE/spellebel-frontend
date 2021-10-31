@@ -2,9 +2,7 @@
   <v-container>
     <v-row>
       <v-col>
-        <h1>
-          {{ categories.find((c) => c.slug == $route.params.category).name }}
-        </h1>
+        <h1>{{ categoryName }}</h1>
       </v-col>
     </v-row>
     <v-row>
@@ -36,6 +34,15 @@ export default Vue.extend({
       },
     ],
   }),
+
+  computed: {
+    categoryName() {
+      const cat = this.categories.find(
+        (c) => c.slug == this.$route.params.category
+      )
+      return cat ? cat.name : 'Onbekende categorie'
+    },
+  },
 })
 </script>
 
