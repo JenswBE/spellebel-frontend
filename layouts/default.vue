@@ -65,7 +65,12 @@
         <v-row>
           <v-col>
             <a to="/" nuxt>
-              <v-img src="/logo.gif" alt="Spellebel" width="100" height="100" />
+              <v-img
+                src="/img/logo.png"
+                alt="Spellebel"
+                width="100"
+                height="100"
+              />
             </a>
           </v-col>
           <v-col>
