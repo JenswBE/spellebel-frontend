@@ -2,7 +2,12 @@
   <v-container>
     <v-row>
       <v-col>
-        <h1>Abonnement</h1>
+        <h1 class="text-h3 pt-15">Hoe werkt het?</h1>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <h2>Abonnement</h2>
       </v-col>
     </v-row>
     <v-row>
@@ -20,10 +25,42 @@
           natellen. Zo kunnen wij steeds garant staan voor volledig en
           kwaliteitvol speelgoed dat opnieuw uitgeleend kan worden. Onze
           uitleenperiode is altijd 3 weken, je mag alsnodig 1 keer verlengen.
-          Dat kan je via sms/telefoon/voicemail/mail vermeld altijd zeker je
-          naam en lidnummer.
+          Dat kan je via
+          <nuxt-link to="/contact">sms/telefoon/voicemail/mail</nuxt-link>
+          vermeld altijd zeker je naam en lidnummer.
+        </p>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <h2>Uitlening verlengen</h2>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam, quis nostrum exercitationem ullam corporis suscipit
+          laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
         </p>
       </v-col>
     </v-row>
   </v-container>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
+
+export default Vue.extend({
+  head(): MetaInfo {
+    return {
+      title: 'Hoe werkt het?',
+    }
+  },
+})
+</script>

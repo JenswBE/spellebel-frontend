@@ -64,14 +64,14 @@
       <v-container class="pt-16 pb-5">
         <v-row>
           <v-col>
-            <a to="/" nuxt>
+            <nuxt-link to="/" nuxt>
               <v-img
                 src="/img/logo.png"
                 alt="Spellebel"
                 width="100"
                 height="100"
               />
-            </a>
+            </nuxt-link>
           </v-col>
           <v-col>
             <v-row>
@@ -139,6 +139,7 @@ import { CONTACT } from '../constants/contact'
 import {
   mdiAccountCircle,
   mdiCalendar,
+  mdiCardAccountPhone,
   mdiHandWash,
   mdiHelpCircle,
   mdiHome,
@@ -163,20 +164,7 @@ export default {
         {
           icon: mdiAccountCircle,
           name: 'Wie zijn we?',
-          subItems: [
-            {
-              name: 'RVB',
-              to: '/wie-zijn-we/rvb',
-            },
-            {
-              name: 'Vrijwilligers',
-              to: '/wie-zijn-we/vrijwilligers',
-            },
-            {
-              name: 'Contactgegevens',
-              to: '/wie-zijn-we/contactgegevens',
-            },
-          ],
+          to: '/wie-zijn-we',
         },
         {
           icon: mdiHelpCircle,
@@ -189,14 +177,14 @@ export default {
           to: '/catalogus',
         },
         {
-          icon: mdiCalendar,
-          name: 'Uitlening verlengen',
-          to: '/uitlening-verlengen',
-        },
-        {
           icon: mdiHandWash,
           name: 'Corona-maatregelen',
           to: '/corona-maatregelen',
+        },
+        {
+          icon: mdiCardAccountPhone,
+          name: 'Contact',
+          to: '/contact',
         },
       ] as NavItem[],
 

@@ -14,6 +14,14 @@
       </v-col>
     </v-row>
     <v-row>
+      <v-col>
+        <p class="text-body-1">
+          Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs
+          om alles te ontdekken!
+        </p>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col v-for="prod in 10" :key="prod" cols="12" sm="4" md="3">
         <v-card>
           <v-img

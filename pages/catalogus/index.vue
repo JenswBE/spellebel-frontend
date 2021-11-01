@@ -7,7 +7,7 @@
     </v-row>
     <v-row>
       <v-col v-for="cat in categories" :key="cat.title" cols="12" sm="6" md="4">
-        <a
+        <nuxt-link
           :href="`/catalogus/${cat.slug}`"
           style="text-decoration: none"
           class="sb-cat-link"
@@ -33,7 +33,7 @@
               </v-img>
             </v-card>
           </v-hover>
-        </a>
+        </nuxt-link>
       </v-col>
     </v-row>
   </v-container>
@@ -41,18 +41,25 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
 import { CATEGORIES } from '../../constants/catalog'
 
 export default Vue.extend({
   data: () => ({
     categories: CATEGORIES,
   }),
+
+  head(): MetaInfo {
+    return {
+      title: 'Catalogus',
+    }
+  },
 })
 </script>
 
 <style scoped>
 .sb-cat-link:hover .sb-cat-label {
-  /* lime darken-1 */
+  /* lime lighten-1 */
   background-color: #d4e157 !important;
 }
 </style>

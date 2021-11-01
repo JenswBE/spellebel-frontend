@@ -35,3 +35,16 @@
     </v-row>
   </v-container>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import { MetaInfo } from 'vue-meta'
+
+export default Vue.extend({
+  head(): MetaInfo {
+    return {
+      title: 'Corona-maatregelen',
+    }
+  },
+})
+</script>
