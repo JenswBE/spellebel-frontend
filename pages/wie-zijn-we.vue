@@ -1,8 +1,10 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="py-10">
       <v-col>
-        <h1 class="text-h3 pt-15">Wie zijn we?</h1>
+        <h1 class="text-h3">
+          <span class="spellebel-title"> Wie zijn we? </span>
+        </h1>
       </v-col>
     </v-row>
     <v-row>
@@ -42,7 +44,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col cols="12" lg="10" offset="1">
+      <v-col cols="12" lg="10" offset-lg="1">
         <v-img src="/img/team.jpg"></v-img>
       </v-col>
     </v-row>

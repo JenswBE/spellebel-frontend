@@ -1,39 +1,87 @@
 <template>
   <v-container fluid class="pa-0">
-    <v-row class="pt-15 pb-10">
+    <v-row class="py-10">
       <v-col>
         <v-container>
           <v-row>
             <v-col>
-              <h1 class="text-h3">Contact</h1>
+              <h1 class="text-h3 pb-5">
+                <span class="spellebel-title"> Contact </span>
+              </h1>
             </v-col>
           </v-row>
-          <v-row>
-            <v-col>
-              <ul>
-                <li>Mondmasker verplicht ( +12 jaar)</li>
-                <li>
-                  Wacht bij het binnenkomen aan de lijn. U wordt zo snel
-                  mogelijk verder geholpen.
-                </li>
-                <li>
-                  Er mogen maar 2 personen (+12 jaar) tegelijkertijd in de
-                  speel-o-theek binnen.
-                </li>
-                <li>
-                  Voor uw &amp; onze veiligheid : kom - indien mogelijk - zonder
-                  kinderen (en liefst alleen).
-                </li>
-                <li>Beperk je bezoek tot maximum 30 minuten.</li>
-                <li>
-                  Ontsmet je handen bij het binnenkomen (of na inleveren van je
-                  speelgoed)
-                </li>
-                <li>
-                  Hou voldoende afstand (1,5m). Dit is ook noodzakelijk terwijl
-                  u buiten moet wachten.
-                </li>
-              </ul>
+          <v-row align="center">
+            <v-col cols="12" lg="4">
+              <v-row align="center">
+                <v-col cols="12">
+                  <h3>Adres</h3>
+                </v-col>
+                <v-col cols="1">
+                  <v-icon :color="iconColor">{{ icons.map }}</v-icon>
+                </v-col>
+                <v-col cols="11">
+                  <p class="mb-0 ml-2">
+                    {{ contact.address.street }}
+                    {{ contact.address.number }}<br />
+                    {{ contact.address.postal_code }}
+                    {{ contact.address.city }}
+                  </p>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="12" lg="4">
+              <v-row align="center">
+                <v-col cols="12">
+                  <h3>Bellen en mailen</h3>
+                </v-col>
+                <v-col cols="1" class="pb-0">
+                  <v-icon :color="iconColor">{{ icons.phone }}</v-icon>
+                </v-col>
+                <v-col cols="11" class="pb-0">
+                  <p class="mb-0 ml-2">
+                    <ExtLink :to="`tel:${contact.phone_number}`">
+                      {{ contact.phone_number }}
+                    </ExtLink>
+                  </p>
+                </v-col>
+                <v-col cols="1">
+                  <v-icon :color="iconColor">{{ icons.email }}</v-icon>
+                </v-col>
+                <v-col cols="11">
+                  <p class="mb-0 ml-2">
+                    <ExtLink :href="`mailto:${contact.email}`">
+                      {{ contact.email }}
+                    </ExtLink>
+                  </p>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="12" lg="4">
+              <v-row align="center">
+                <v-col cols="12">
+                  <h3>Overig</h3>
+                </v-col>
+                <v-col cols="1" class="pb-0">
+                  <v-icon :color="iconColor">{{ icons.facebook }}</v-icon>
+                </v-col>
+                <v-col cols="11" class="pb-0">
+                  <p class="mb-0 ml-2">
+                    <ExtLink :to="contact.social.facebook.url">
+                      {{ contact.social.facebook.name }}
+                    </ExtLink>
+                  </p>
+                </v-col>
+                <v-col cols="1">
+                  <v-icon :color="iconColor">{{ icons.whatsapp }}</v-icon>
+                </v-col>
+                <v-col cols="11">
+                  <p class="mb-0 ml-2">
+                    <ExtLink :to="`tel:${contact.phone_number}`">
+                      {{ contact.phone_number }}
+                    </ExtLink>
+                  </p>
+                </v-col>
+              </v-row>
             </v-col>
           </v-row>
         </v-container>
@@ -56,7 +104,14 @@
               :tileSize="512"
               :options="map.layerOptions"
             ></l-tile-layer>
-            <l-marker :lat-lng="[map.coord.lat, map.coord.lng]"></l-marker>
+            <l-marker :lat-lng="[map.coord.lat, map.coord.lng]">
+              <l-icon
+                :icon-size="[50, 50]"
+                :icon-anchor="[25, 25]"
+                icon-url="/img/map-marker.png"
+              ></l-icon>
+              <l-popup>Hello!</l-popup>
+            </l-marker>
           </l-map>
         </client-only>
       </v-col>
@@ -67,10 +122,29 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
+import {
+  mdiAt,
+  mdiBullhorn,
+  mdiFacebook,
+  mdiMap,
+  mdiPhone,
+  mdiWhatsapp,
+} from '@mdi/js'
+import { CONTACT } from '../constants/contact'
 
 export default Vue.extend({
   data() {
     return {
+      contact: CONTACT,
+      iconColor: 'blue lighten-1',
+      icons: {
+        email: mdiAt,
+        facebook: mdiFacebook,
+        map: mdiMap,
+        other: mdiBullhorn,
+        phone: mdiPhone,
+        whatsapp: mdiWhatsapp,
+      },
       map: {
         coord: {
           lat: 51.31812,

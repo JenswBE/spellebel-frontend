@@ -1,8 +1,10 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="py-10">
       <v-col>
-        <h1>Corona-maatregelen</h1>
+        <h1 class="text-h3">
+          <span class="spellebel-title"> Corona-maatregelen </span>
+        </h1>
       </v-col>
     </v-row>
     <v-row>

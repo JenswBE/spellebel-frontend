@@ -1,8 +1,10 @@
 <template>
   <v-container>
     <v-row>
-      <v-col>
-        <h1>Soorten speelgoed</h1>
+      <v-col class="py-10">
+        <h1 class="text-h3">
+          <span class="spellebel-title"> Soorten speelgoed </span>
+        </h1>
       </v-col>
     </v-row>
     <v-row>

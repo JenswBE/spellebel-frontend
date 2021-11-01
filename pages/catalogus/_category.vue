@@ -1,8 +1,10 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="py-10">
       <v-col>
-        <h1>{{ categoryName }}</h1>
+        <h1 class="text-h3">
+          <span class="spellebel-title"> {{ categoryName }} </span>
+        </h1>
       </v-col>
     </v-row>
     <v-row>
@@ -78,10 +80,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style scoped>
-.sb-cat-link:hover .sb-cat-label {
-  /* lime darken-1 */
-  background-color: #d4e157 !important;
-}
-</style>

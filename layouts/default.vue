@@ -130,6 +130,11 @@
 #spellebel-footer {
   border-top: 1px solid #e3e3e3 !important;
 }
+
+.spellebel-title {
+  /* lime */
+  border-bottom: 5px solid #cddc39;
+}
 </style>
 
 <script lang="ts">
@@ -138,7 +143,6 @@ import NavList from '../components/NavList.vue'
 import { CONTACT } from '../constants/contact'
 import {
   mdiAccountCircle,
-  mdiCalendar,
   mdiCardAccountPhone,
   mdiHandWash,
   mdiHelpCircle,

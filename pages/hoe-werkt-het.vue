@@ -1,8 +1,10 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="py-10">
       <v-col>
-        <h1 class="text-h3 pt-15">Hoe werkt het?</h1>
+        <h1 class="text-h3">
+          <span class="spellebel-title"> Hoe werkt het? </span>
+        </h1>
       </v-col>
     </v-row>
     <v-row>
