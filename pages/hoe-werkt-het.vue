@@ -9,11 +9,11 @@
     </v-row>
     <v-row>
       <v-col>
-        <h2>Abonnement</h2>
+        <h2 class="text-h4">Abonnement</h2>
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col class="text-body-1">
         <p>
           Naargelang je abonnement, kan je 3 of 6 stuks speelgoed uit ons
           assortiment kiezen. Het speelgoed dat bij ons in de rekken staat heeft
@@ -35,11 +35,11 @@
     </v-row>
     <v-row>
       <v-col>
-        <h2>Uitlening verlengen</h2>
+        <h2 class="text-h4">Uitlening verlengen</h2>
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col class="text-body-1">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
           tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim

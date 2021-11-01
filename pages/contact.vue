@@ -11,7 +11,26 @@
             </v-col>
           </v-row>
           <v-row align="center">
-            <v-col cols="12" lg="4">
+            <v-col cols="12" lg="3">
+              <v-row align="center">
+                <v-col cols="12">
+                  <h3>Openingsuren</h3>
+                </v-col>
+                <v-col cols="1">
+                  <v-icon :color="iconColor">{{ icons.clock }}</v-icon>
+                </v-col>
+                <v-col cols="11">
+                  <p
+                    v-for="hour in contact.hours"
+                    :key="hour"
+                    class="mb-0 ml-2"
+                  >
+                    {{ hour }}
+                  </p>
+                </v-col>
+              </v-row>
+            </v-col>
+            <v-col cols="12" lg="3">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Adres</h3>
@@ -29,7 +48,7 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="12" lg="4">
+            <v-col cols="12" lg="3">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Bellen en mailen</h3>
@@ -56,7 +75,7 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="12" lg="4">
+            <v-col cols="12" lg="3">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Overig</h3>
@@ -124,7 +143,7 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 import {
   mdiAt,
-  mdiBullhorn,
+  mdiClock,
   mdiFacebook,
   mdiMap,
   mdiPhone,
@@ -138,10 +157,10 @@ export default Vue.extend({
       contact: CONTACT,
       iconColor: 'blue lighten-1',
       icons: {
+        clock: mdiClock,
         email: mdiAt,
         facebook: mdiFacebook,
         map: mdiMap,
-        other: mdiBullhorn,
         phone: mdiPhone,
         whatsapp: mdiWhatsapp,
       },

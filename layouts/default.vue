@@ -66,7 +66,7 @@
           <v-col>
             <nuxt-link to="/" nuxt>
               <v-img
-                src="/img/logo.png"
+                src="/img/logo-small.png"
                 alt="Spellebel"
                 width="100"
                 height="100"

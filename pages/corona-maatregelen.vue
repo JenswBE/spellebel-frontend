@@ -9,7 +9,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <ul>
+        <ul class="text-body-1">
           <li>Mondmasker verplicht ( +12 jaar)</li>
           <li>
             Wacht bij het binnenkomen aan de lijn. U wordt zo snel mogelijk

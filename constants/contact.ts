@@ -1,4 +1,6 @@
 export const CONTACT = {
+  hours: ['Woensdag: 14u30 tot 17u00', 'Zaterdag: 09u30 tot 12u00'],
+
   email: 'info@spellebel.be',
   phone_number: '+32 472 89 61 45',
   address: {

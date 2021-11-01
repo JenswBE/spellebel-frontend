@@ -9,11 +9,11 @@
     </v-row>
     <v-row>
       <v-col>
-        <h2>RVB</h2>
+        <h2 class="text-h4">RVB</h2>
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col class="text-body-1">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
           tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -27,11 +27,11 @@
     </v-row>
     <v-row>
       <v-col>
-        <h2>Vrijwilligers</h2>
+        <h2 class="text-h4">Vrijwilligers</h2>
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
+      <v-col class="text-body-1">
         <p>
           Aut quisquam veritatis id sint illo qui fuga adipisci eos molestiae
           culpa nam reprehenderit explicabo. In iste quas rem distinctio vero
@@ -45,7 +45,7 @@
     </v-row>
     <v-row>
       <v-col cols="12" lg="10" offset-lg="1">
-        <v-img src="/img/team.jpg"></v-img>
+        <v-img src="/img/team-small.jpg"></v-img>
       </v-col>
     </v-row>
   </v-container>
