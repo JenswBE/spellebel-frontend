@@ -8,7 +8,7 @@
     <v-row>
       <v-col v-for="cat in categories" :key="cat.title" cols="12" sm="6" md="4">
         <nuxt-link
-          :href="`/catalogus/${cat.slug}`"
+          :to="`/catalogus/${cat.slug}`"
           style="text-decoration: none"
           class="sb-cat-link"
         >

@@ -67,7 +67,8 @@ import { MetaInfo } from 'vue-meta'
 export default Vue.extend({
   head(): MetaInfo {
     return {
-      title: 'Start',
+      title: 'Spellebel',
+      titleTemplate: '',
     }
   },
 })
