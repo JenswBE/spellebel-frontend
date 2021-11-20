@@ -1296,10 +1296,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdi/js@npm:^6.4.95":
-  version: 6.4.95
-  resolution: "@mdi/js@npm:6.4.95"
-  checksum: 76055821b0b611090f1fadff3cb93b0d2c05f7c52778a0e8966abe1c85d3aae8312c497e91882bb8cb02bf9235edda901da944099553afb2dbacafb11ed40b18
+"@mdi/js@npm:^6.5.95":
+  version: 6.5.95
+  resolution: "@mdi/js@npm:6.5.95"
+  checksum: b1db7713d216c119f584bf973514a2f9d8f2e671e91bf19ce8e56cfa7a9843c0a060328e794507ac31f2bded1032123294f39ff8e987ea5acb2719ab522ef146
   languageName: node
   linkType: hard
 
@@ -2010,12 +2010,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/leaflet@npm:1.5.4":
-  version: 1.5.4
-  resolution: "@types/leaflet@npm:1.5.4"
+"@types/leaflet@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@types/leaflet@npm:1.7.6"
   dependencies:
     "@types/geojson": "*"
-  checksum: 4f944c19bf4f8832645968a4e21f876e3eaeb2f51a7bb2c89104240661923850be56ec6d72821e56f9e9ff85379d23294fc29c84a9002d81328302b8624fbeb4
+  checksum: 626c96342d2f9f86ffa573aa0d2c1b659b84f4330ff9ced2d351fd19a86c31c69f7e65100f8844d886d20cf1afdf20878512d4a55063e265920704f6e61c0fae
   languageName: node
   linkType: hard
 
@@ -6882,7 +6882,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"leaflet@npm:^1.6.0":
+"leaflet@npm:^1.7.1":
   version: 1.7.1
   resolution: "leaflet@npm:1.7.1"
   checksum: f69149ab482eeb6cdabd837939c4782c97a7a18bc0b2a9330d4a828ca0dc6e035981f2ecdb71c6646aa173bc369cd3b4fd6bbe5d81df4c59c45254f9e9361d03
@@ -7942,15 +7942,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nuxt-leaflet@npm:^0.0.25":
-  version: 0.0.25
-  resolution: "nuxt-leaflet@npm:0.0.25"
+"nuxt-leaflet@npm:^0.0.27":
+  version: 0.0.27
+  resolution: "nuxt-leaflet@npm:0.0.27"
   dependencies:
-    "@types/leaflet": 1.5.4
-    leaflet: ^1.6.0
+    "@types/leaflet": 1.7.6
+    leaflet: ^1.7.1
     npm-publish-git-tag: ^3.0.3
-    vue2-leaflet: ^2.6.0
-  checksum: 846ceffe845169977c010a5e516b0a5c6ee21fb79dbae9964b155c3a03a521f8b378b102cfd4f57a57f6b6fc14c04cf0a5a94510b9a73d7f9078b5fc00ceec9d
+    vue2-leaflet: ^2.7.1
+  checksum: e1272826b61db687c5c182ae33e1e07fd87660624326024f4b4fe2b206929c96f5979ab08d1d12eb5424092ddcbc95046ac04148276f928f2e957400d8421a2e
   languageName: node
   linkType: hard
 
@@ -10670,7 +10670,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "spellebel-frontend@workspace:."
   dependencies:
-    "@mdi/js": ^6.4.95
+    "@mdi/js": ^6.5.95
     "@nuxt/types": ^2.15.8
     "@nuxt/typescript-build": ^2.1.0
     "@nuxtjs/axios": ^5.13.6
@@ -10678,9 +10678,9 @@ __metadata:
     core-js: ^3.19.1
     eslint-config-prettier: ^8.3.0
     nuxt: ^2.15.8
-    nuxt-leaflet: ^0.0.25
+    nuxt-leaflet: ^0.0.27
     prettier: ^2.4.1
-    vuetify: ^2.5.14
+    vuetify: ^2.6.0
   languageName: unknown
   linkType: soft
 
@@ -11794,7 +11794,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vue2-leaflet@npm:^2.6.0":
+"vue2-leaflet@npm:^2.7.1":
   version: 2.7.1
   resolution: "vue2-leaflet@npm:2.7.1"
   peerDependencies:
@@ -11827,21 +11827,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.5.14":
-  version: 2.5.14
-  resolution: "vuetify@npm:2.5.14"
-  peerDependencies:
-    vue: ^2.6.4
-  checksum: 453816e0877194b0dcdec1fd0c2a74328e2019f3a9f4ea8bacb824f3ee4e73daff63c6feb05d657c328b329193b9c99e16705db5fc8a4df81b9167ee8fffcfaa
-  languageName: node
-  linkType: hard
-
 "vuetify@npm:^2.5.3":
   version: 2.5.10
   resolution: "vuetify@npm:2.5.10"
   peerDependencies:
     vue: ^2.6.4
   checksum: 3cbb3cb96d63daffdf44ffe0e57c44fb8970eb74d196eaca9ca257990d560a97b6d21ca9415e24435bbb54057d89b3d2392d97e3bf3bb6efd16f1202e846c64d
+  languageName: node
+  linkType: hard
+
+"vuetify@npm:^2.6.0":
+  version: 2.6.0
+  resolution: "vuetify@npm:2.6.0"
+  peerDependencies:
+    vue: ^2.6.4
+  checksum: ce28415e6b16561829292b844abbe53c4c4fd2bbd591fc6d59944b981769aae7c098da9299a9cf807d3a107e009f1d3e30f91525dd9ac02f2bde7a8fa8c227df
   languageName: node
   linkType: hard
 
