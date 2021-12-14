@@ -1774,16 +1774,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/vuetify@npm:^1.12.1":
-  version: 1.12.1
-  resolution: "@nuxtjs/vuetify@npm:1.12.1"
+"@nuxtjs/vuetify@npm:^1.12.3":
+  version: 1.12.3
+  resolution: "@nuxtjs/vuetify@npm:1.12.3"
   dependencies:
     deepmerge: ^4.2.2
     sass: ~1.32.13
     sass-loader: ^10.2.0
-    vuetify: ^2.5.3
-    vuetify-loader: ^1.7.2
-  checksum: e7f3df4aeb34b8fcfb3f99cacf5fd3de7e5e429f8b8b9ac5eda6a64a863ef0c9803f37b24b0fef262bab671f5e911df25848a976109e67142157a13cf501875d
+    vuetify: ^2.6
+    vuetify-loader: ^1.7.3
+  checksum: bfadb3641330e29c76bc278768cf6dbe371360508cc94801c209c5d37dc360ed29bc2265da3db14f3d2940a9171db09f488edd1413c9a41c05f13bc2ecb8a651
   languageName: node
   linkType: hard
 
@@ -3952,10 +3952,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.19.1":
-  version: 3.19.1
-  resolution: "core-js@npm:3.19.1"
-  checksum: 2f669061788dc6fea823f0433d871deeaaaacc7d68ef2748859509522a34df5c83e648c3c6a1993fed0ab188081b3cf32b957b2a1f46156a2b20bd775961ade4
+"core-js@npm:^3.19.3":
+  version: 3.19.3
+  resolution: "core-js@npm:3.19.3"
+  checksum: eaa7afd87411393a7b1637fd0813957f689e91007219b6a951a1fe1aa08edccfddbbfbb1acb281a76dbe90b42fe7768377289258d81ba46e13c9919527aee95a
   languageName: node
   linkType: hard
 
@@ -9374,12 +9374,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^1.18.2 || ^2.0.0, prettier@npm:^2.4.1":
+"prettier@npm:^1.18.2 || ^2.0.0":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
     prettier: bin-prettier.js
   checksum: cc6830588b401b0d742862fe9c46bc9118204fb307c3abe0e49e95b35ed23629573807ffdf9cdd65289c252a0bb51fc0171437f6626ee36378dea80f0ee80b91
+  languageName: node
+  linkType: hard
+
+"prettier@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "prettier@npm:2.5.1"
+  bin:
+    prettier: bin-prettier.js
+  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
   languageName: node
   linkType: hard
 
@@ -10674,13 +10683,13 @@ __metadata:
     "@nuxt/types": ^2.15.8
     "@nuxt/typescript-build": ^2.1.0
     "@nuxtjs/axios": ^5.13.6
-    "@nuxtjs/vuetify": ^1.12.1
-    core-js: ^3.19.1
+    "@nuxtjs/vuetify": ^1.12.3
+    core-js: ^3.19.3
     eslint-config-prettier: ^8.3.0
     nuxt: ^2.15.8
     nuxt-leaflet: ^0.0.27
-    prettier: ^2.4.1
-    vuetify: ^2.6.0
+    prettier: ^2.5.1
+    vuetify: ^2.6.1
   languageName: unknown
   linkType: soft
 
@@ -11812,7 +11821,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.7.2":
+"vuetify-loader@npm:^1.7.3":
   version: 1.7.3
   resolution: "vuetify-loader@npm:1.7.3"
   dependencies:
@@ -11827,21 +11836,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.5.3":
-  version: 2.5.10
-  resolution: "vuetify@npm:2.5.10"
+"vuetify@npm:^2.6, vuetify@npm:^2.6.1":
+  version: 2.6.1
+  resolution: "vuetify@npm:2.6.1"
   peerDependencies:
     vue: ^2.6.4
-  checksum: 3cbb3cb96d63daffdf44ffe0e57c44fb8970eb74d196eaca9ca257990d560a97b6d21ca9415e24435bbb54057d89b3d2392d97e3bf3bb6efd16f1202e846c64d
-  languageName: node
-  linkType: hard
-
-"vuetify@npm:^2.6.0":
-  version: 2.6.0
-  resolution: "vuetify@npm:2.6.0"
-  peerDependencies:
-    vue: ^2.6.4
-  checksum: ce28415e6b16561829292b844abbe53c4c4fd2bbd591fc6d59944b981769aae7c098da9299a9cf807d3a107e009f1d3e30f91525dd9ac02f2bde7a8fa8c227df
+  checksum: 76a66a52bdd5ce67baf81fee79c97cd128f4d3519ef531b9a76b85dfdf04ffd42559ca4da1bc75e0c5666a8ae88225cc4b4a7b36e868b38e902a1529fca8f6d8
   languageName: node
   linkType: hard
 
