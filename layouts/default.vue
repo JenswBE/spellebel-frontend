@@ -177,8 +177,8 @@ export default {
         },
         {
           icon: mdiTeddyBear,
-          name: 'Catalogus',
-          to: '/catalogus',
+          name: 'Aanbod',
+          to: '/aanbod',
         },
         {
           icon: mdiHandWash,

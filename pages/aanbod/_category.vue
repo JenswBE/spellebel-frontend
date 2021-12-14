@@ -9,7 +9,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-btn text to="/catalogus" exact>
+        <v-btn text to="/aanbod" exact>
           <v-icon left>{{ icons.arrowLeft }}</v-icon>
           Terug naar overzicht
         </v-btn>
@@ -33,7 +33,7 @@
     </v-row>
     <v-row>
       <v-col>
-        <v-btn text to="/catalogus" exact>
+        <v-btn text to="/aanbod" exact>
           <v-icon left>{{ icons.arrowLeft }}</v-icon>
           Terug naar overzicht
         </v-btn>
@@ -44,7 +44,7 @@
 
 <script lang="ts">
 import Vue from 'vue'
-import { CATEGORIES } from '../../constants/catalog'
+import { CATEGORIES } from '../../constants/aanbod'
 import { mdiArrowLeft } from '@mdi/js'
 
 export default Vue.extend({

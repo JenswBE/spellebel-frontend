@@ -10,7 +10,7 @@
     <v-row>
       <v-col v-for="cat in categories" :key="cat.title" cols="12" sm="6" md="4">
         <nuxt-link
-          :to="`/catalogus/${cat.slug}`"
+          :to="`/aanbod/${cat.slug}`"
           style="text-decoration: none"
           class="sb-cat-link"
         >
@@ -44,7 +44,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
-import { CATEGORIES } from '../../constants/catalog'
+import { CATEGORIES } from '../../constants/aanbod'
 
 export default Vue.extend({
   data: () => ({
@@ -53,7 +53,7 @@ export default Vue.extend({
 
   head(): MetaInfo {
     return {
-      title: 'Catalogus',
+      title: 'Aanbod',
     }
   },
 })
