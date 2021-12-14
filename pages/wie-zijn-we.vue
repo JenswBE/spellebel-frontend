@@ -41,6 +41,10 @@
           quam sint in voluptatem quia vel repudiandae facere? Et iste quas non
           asperiores omnis id iusto dolorem et repellat laudantium.
         </p>
+        <p class="font-weight-bold text-center pt-5">
+          Word jij ook graag spulmer?
+          <nuxt-link to="/contact">Neem dan zeker contact op.</nuxt-link>
+        </p>
       </v-col>
     </v-row>
     <v-row>
