@@ -59,6 +59,7 @@ jobs:
 
       - name: Request pull and restart on server
         run: |
-          curl --fail --verbose --header "API-KEY: ${DRPR_API_KEY:?}" -X POST "https://drpr-eve.jensw.be/${CONTAINER_NAME:?}/pull_restart/"
+          curl --fail --verbose --header "API-KEY: ${API_KEY:?}" -X POST "https://drpr-eve.jensw.be/${CONTAINER:?}/pull_restart/"
         env:
-          CONTAINER_NAME: ${{ steps.vars.outputs.container_name }}
+          API_KEY: ${{ secrets.DRPR_API_KEY }}
+          CONTAINER: ${{ steps.vars.outputs.container_name }}
