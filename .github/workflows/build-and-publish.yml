@@ -23,13 +23,14 @@ jobs:
           import os, re, sys
           tag = os.environ['GITHUB_REF'].split('/').pop()
           print(f"Tag: {tag}")
-          tags = []
           semverRegex = r"^v\d+\.\d+\.\d+$"
           if tag == 'main':
             tags = ['latest']
+            container_name = "spellebel"
           elif re.match(semverRegex, tag):
             tag_parts = tag.split(".")
             tags = ['stable', tag, tag_parts[0], f"{tag_parts[0]}.{tag_parts[1]}"]
+            container_name = "spellebel-test"
           else:
             sys.exit(f"Invalid tag {tag}. Must be main or a semver tag")
           images = []
@@ -37,7 +38,9 @@ jobs:
           images = [f"{image_base}:{t}" for t in tags]
           images_list = ",".join(images)
           print(f"Images: {images_list}")
+          print(f"Container name: {container_name}")
           print(f"::set-output name=images::{images_list}")
+          print(f"::set-output name=container_name::{container_name}")
 
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v1.6.0
@@ -53,3 +56,9 @@ jobs:
         with:
           push: true
           tags: ${{ steps.vars.outputs.images }}
+
+      - name: Request pull and restart on server
+        run: |
+          curl --fail --verbose --header "API-KEY: ${DRPR_API_KEY:?}" -X POST "https://drpr-eve.jensw.be/${CONTAINER_NAME:?}/pull_restart/"
+        env:
+          CONTAINER_NAME: ${{ steps.vars.outputs.container_name }}
