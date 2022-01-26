@@ -3,7 +3,7 @@
     <v-row>
       <v-col class="py-10">
         <h1 class="text-h3">
-          <span class="spellebel-title"> Soorten speelgoed (test) </span>
+          <span class="spellebel-title"> Soorten speelgoed : </span>
         </h1>
       </v-col>
     </v-row>
@@ -56,37 +56,42 @@ export default Vue.extend({
   data: () => ({
     categories: [
       {
-        name: 'Beweging / Buiten',
+        name: 'Beweging / Buiten (B)',
         slug: 'beweging-buiten',
         img: '/img/categories/buiten-small.jpg',
       },
       {
-        name: 'Constructie',
+        name: 'Constructie (C)',
         slug: 'constructie',
         img: '/img/categories/constructie-small.jpg',
       },
       {
-        name: 'Expressie',
+        name: 'Expressie (E)',
         slug: 'expressie',
         img: '/img/categories/constructie-small.jpg',
       },
       {
-        name: 'Fantasie',
+        name: 'Fantasie (F)',
         slug: 'fantasie',
         img: '/img/categories/constructie-small.jpg',
       },
       {
-        name: 'Gezelschapspellen',
+        name: 'Gezelschapspellen (G)',
         slug: 'gezelschapspellen',
         img: '/img/categories/constructie-small.jpg',
       },
       {
-        name: 'Puzzels',
+        name: 'Puzzels (P)',
         slug: 'puzzels',
         img: '/img/categories/constructie-small.jpg',
       },
       {
-        name: 'Zintuiglijk',
+        name: 'Speciaal (S)',
+        slug: 'speciaal',
+        img: '/img/categories/constructie-small.jpg',
+      },
+      {
+        name: 'Zintuiglijk (Z)',
         slug: 'zintuiglijk',
         img: '/img/categories/constructie-small.jpg',
       },
