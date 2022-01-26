@@ -8,7 +8,14 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col v-for="cat in categories" :key="cat.title" cols="12" sm="6" md="4">
+      <v-col
+        v-for="cat in categories"
+        :key="cat.title"
+        cols="12"
+        sm="6"
+        md="4"
+        lg="3"
+      >
         <nuxt-link
           :to="`/aanbod/${cat.slug}`"
           style="text-decoration: none"
@@ -44,11 +51,46 @@
 <script lang="ts">
 import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
-import { CATEGORIES } from '../../constants/aanbod'
 
 export default Vue.extend({
   data: () => ({
-    categories: CATEGORIES,
+    categories: [
+      {
+        name: 'Beweging / Buiten',
+        slug: 'beweging-buiten',
+        img: '/img/categories/buiten-small.jpg',
+      },
+      {
+        name: 'Constructie',
+        slug: 'constructie',
+        img: '/img/categories/constructie-small.jpg',
+      },
+      {
+        name: 'Expressie',
+        slug: 'expressie',
+        img: '/img/categories/constructie-small.jpg',
+      },
+      {
+        name: 'Fantasie',
+        slug: 'fantasie',
+        img: '/img/categories/constructie-small.jpg',
+      },
+      {
+        name: 'Gezelschapspellen',
+        slug: 'gezelschapspellen',
+        img: '/img/categories/constructie-small.jpg',
+      },
+      {
+        name: 'Puzzels',
+        slug: 'puzzels',
+        img: '/img/categories/constructie-small.jpg',
+      },
+      {
+        name: 'Zintuiglijk',
+        slug: 'zintuiglijk',
+        img: '/img/categories/constructie-small.jpg',
+      },
+    ],
   }),
 
   head(): MetaInfo {
