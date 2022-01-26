@@ -65,17 +65,9 @@
               <v-img src="/img/nieuwtje-small.jpg" class="rounded-circle" />
             </v-col>
             <v-col cols="12" sm="9">
-              <h2 class="text-h4 pb-2">Nieuwtje!</h2>
+              <h2 class="text-h4 pb-2">Nieuwtje !</h2>
               <p class="text-body-1">
-                Pharetra magnis etiam torquent cursus cubilia est conubia
-                volutpat, enim imperdiet luctus hac suscipit vitae. Ac
-                scelerisque pretium natoque elementum sed in potenti blandit
-                gravida eros rhoncus risus, sociis eu sapien lobortis odio
-                molestie turpis ad dictumst convallis fringilla neque, proin
-                nisl libero est sodales vitae inceptos fames curabitur erat
-                cursus. Lacus id ornare mus urna himenaeos proin eu,
-                pellentesque cubilia lobortis sollicitudin dignissim euismod
-                taciti quis, dictum ad maecenas inceptos ullamcorper velit.
+                Onze speel-o-theek bestaat in september 2022 al 20 jaar! We zullen dit zeker vieren en houden jullie hiervan via onze website en sociale media op de hoogte !   
               </p>
             </v-col>
           </v-row>
