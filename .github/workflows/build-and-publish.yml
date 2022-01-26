@@ -26,11 +26,11 @@ jobs:
           semverRegex = r"^v\d+\.\d+\.\d+$"
           if tag == 'main':
             tags = ['latest']
-            container_name = "spellebel"
+            container_name = "spellebel-test"
           elif re.match(semverRegex, tag):
             tag_parts = tag.split(".")
             tags = ['stable', tag, tag_parts[0], f"{tag_parts[0]}.{tag_parts[1]}"]
-            container_name = "spellebel-test"
+            container_name = "spellebel"
           else:
             sys.exit(f"Invalid tag {tag}. Must be main or a semver tag")
           images = []
