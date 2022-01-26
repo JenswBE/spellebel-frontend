@@ -3,7 +3,7 @@
     <v-row>
       <v-col class="py-10">
         <h1 class="text-h3">
-          <span class="spellebel-title"> Soorten speelgoed </span>
+          <span class="spellebel-title"> Soorten speelgoed (test) </span>
         </h1>
       </v-col>
     </v-row>
