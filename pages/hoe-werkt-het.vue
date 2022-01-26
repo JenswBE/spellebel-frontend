@@ -41,13 +41,9 @@
     <v-row>
       <v-col class="text-body-1">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
-          tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
-          veniam, quis nostrum exercitationem ullam corporis suscipit
-          laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute iure
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          De uitleenperiode van een speelgoed kan na normale uitleentermijn zonodig éénmalig verlengd worden 
+          met één uitleenperiode onder de voorwaarde dat het betreffende spelmateriaal niet gereserveerd is 
+          door een andere ontlener.
         </p>
       </v-col>
     </v-row>
