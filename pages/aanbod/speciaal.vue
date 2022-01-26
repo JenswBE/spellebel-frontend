@@ -3,7 +3,7 @@
     <v-row class="py-10">
       <v-col>
         <h1 class="text-h3">
-          <span class="spellebel-title">Puzzels (P)</span>
+          <span class="spellebel-title">Speciaal (S)</span>
         </h1>
       </v-col>
     </v-row>
