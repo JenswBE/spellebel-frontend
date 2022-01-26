@@ -86,7 +86,7 @@ export default Vue.extend({
         img: '/img/categories/constructie-small.jpg',
       },
       {
-        name: 'Speciaal (S)',
+        name: 'Speciaal (S) ',
         slug: 'speciaal',
         img: '/img/categories/constructie-small.jpg',
       },
