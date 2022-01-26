@@ -3952,10 +3952,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.19.3":
-  version: 3.19.3
-  resolution: "core-js@npm:3.19.3"
-  checksum: eaa7afd87411393a7b1637fd0813957f689e91007219b6a951a1fe1aa08edccfddbbfbb1acb281a76dbe90b42fe7768377289258d81ba46e13c9919527aee95a
+"core-js@npm:^3.20.3":
+  version: 3.20.3
+  resolution: "core-js@npm:3.20.3"
+  checksum: 2106cdfb1330abf9e27d577666fc0421feafe8c39bb5af90a63af16e9706c767a7e3a82edc21ce3ed6b9d806f3200d1cf6cc3d0597a8c0af12dbec287c781d65
   languageName: node
   linkType: hard
 
@@ -10684,12 +10684,12 @@ __metadata:
     "@nuxt/typescript-build": ^2.1.0
     "@nuxtjs/axios": ^5.13.6
     "@nuxtjs/vuetify": ^1.12.3
-    core-js: ^3.19.3
+    core-js: ^3.20.3
     eslint-config-prettier: ^8.3.0
     nuxt: ^2.15.8
     nuxt-leaflet: ^0.0.27
     prettier: ^2.5.1
-    vuetify: ^2.6.1
+    vuetify: ^2.6.3
   languageName: unknown
   linkType: soft
 
@@ -11836,12 +11836,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.6, vuetify@npm:^2.6.1":
+"vuetify@npm:^2.6":
   version: 2.6.1
   resolution: "vuetify@npm:2.6.1"
   peerDependencies:
     vue: ^2.6.4
   checksum: 76a66a52bdd5ce67baf81fee79c97cd128f4d3519ef531b9a76b85dfdf04ffd42559ca4da1bc75e0c5666a8ae88225cc4b4a7b36e868b38e902a1529fca8f6d8
+  languageName: node
+  linkType: hard
+
+"vuetify@npm:^2.6.3":
+  version: 2.6.3
+  resolution: "vuetify@npm:2.6.3"
+  peerDependencies:
+    vue: ^2.6.4
+  checksum: f50a4c9d22c578a6a3d0c7def9ac3741a146a65aaf997062bf963e7ad8b1b2479c122f3f594694bb00293baec6e081d2f73f97bebbc9ce10a01e36096478b088
   languageName: node
   linkType: hard
 
