@@ -15,7 +15,7 @@
     <v-row>
       <v-col class="text-body-1">
         <p>
-          Tekst RVB (als die nodig is) ...
+          Tekst RVB (als die nodig is) ... 21u15
         </p>
       </v-col>
     </v-row>
