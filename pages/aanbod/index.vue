@@ -73,12 +73,12 @@ export default Vue.extend({
       {
         name: 'Fantasie (F)',
         slug: 'fantasie',
-        img: '/img/categories/constructie-small.jpg',
+        img: '/img/categories/fantasie.jpg',
       },
       {
         name: 'Gezelschapspellen (G)',
         slug: 'gezelschapspellen',
-        img: '/img/categories/constructie-small.jpg',
+        img: '/img/categories/gezelschapspelen.jpg',
       },
       {
         name: 'Puzzels (P)',
