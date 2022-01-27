@@ -56,8 +56,8 @@ export default Vue.extend({
   data: () => ({
     categories: [
       {
-        name: 'Beweging / Buiten (B)',
-        slug: 'beweging-buiten',
+        name: 'Beweging (B)',
+        slug: 'beweging',
         img: '/img/categories/buiten-small.jpg',
       },
       {

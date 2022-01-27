@@ -3,7 +3,7 @@
     <v-row class="py-10">
       <v-col>
         <h1 class="text-h3">
-          <span class="spellebel-title"> Beweging / Buiten </span>
+          <span class="spellebel-title"> Beweging (B)</span>
         </h1>
       </v-col>
     </v-row>
