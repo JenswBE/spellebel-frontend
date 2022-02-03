@@ -12,16 +12,14 @@
         <ul class="text-body-1">
           <li>Mondmasker verplicht ( +6 jaar)</li>
           <li>
-            Wacht bij het binnenkomen aan de lijn. U wordt zo snel mogelijk
-            verder geholpen.
-          </li>
-          <li>
             Ontsmet je handen bij het binnenkomen (of na inleveren van je
             speelgoed)
           </li>
           <li>
-            Hou voldoende afstand (1,5m). Dit is ook noodzakelijk terwijl u
-            buiten moet wachten.
+            Hou voldoende afstand (1,5m). 
+          </li>
+          <li>
+            Ben je ziek en kan je niet komen? Denk er dan aan om tijdig te verlengen.
           </li>
         </ul>
       </v-col>
