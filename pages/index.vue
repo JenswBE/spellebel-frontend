@@ -43,7 +43,7 @@
             <v-col>
               <p class="text-body-1">
                Spellebel is een speel-o-theek. Bij ons kan je speelgoed uitlenen, net zoals een bibliotheek dat met boeken doet. 
-               Wij streven er naar om een verscheiden aanbod aan te bieden, zo kan je er heel wat “ander” speelgoed vinden 
+               <br>Wij streven er naar om een verscheiden aanbod aan te bieden. Zo kan je er heel wat “ander” speelgoed vinden 
                dan dat je thuis al in de kast hebt liggen of wil kopen.
               </p>
             </v-col>
