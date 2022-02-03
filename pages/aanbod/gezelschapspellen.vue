@@ -18,8 +18,10 @@
     <v-row>
       <v-col>
         <p class="text-body-1">
-          Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs
-          om alles te ontdekken!
+         Onze gezelschapspelen zijn opgedeeld in 4 leeftijdsgroepen met elk een  eigen kleur (zie gekleurde stickers).
+        </p>
+        <p class="text-body-1">
+          Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs om alles te ontdekken!
         </p>
       </v-col>
     </v-row>
