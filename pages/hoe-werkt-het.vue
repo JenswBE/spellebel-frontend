@@ -46,15 +46,15 @@
           Wij werken met 3 types abonnement :
         </p>
         <p>
-         <table border=0>
+         <table border=0 width=50%>
            <tr>
-              <td>
+              <td width=33%>
                 Gewoon abonnement
               </td>
-              <td>
+              <td width=33%>
                 3 stuks
               </td>
-              <td>
+              <td width=33%>
                 €15
               </td>
            </tr>
