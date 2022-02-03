@@ -14,14 +14,14 @@
     </v-row>
     <v-row>
       <v-col class="text-body-1">
-        <p class="font-weight-bold text-center pt-5">
+        <p>
           Wij noemen onze vrijwilligers SPULMERS.
           <br>Dit letterwoord komt van SPeelotheek-UitLeenMedewekERS 
         </p>
         <p>
           Foto SPULMERS
         </p>
-        <p class="font-weight-bold text-center pt-5">
+        <p>
           Word jij ook graag spulmer?
           <br>Neem dan alvast een kijkje op <nuxt-link to="/spulmer-worden">deze pagina</nuxt-link> !
         </p>
