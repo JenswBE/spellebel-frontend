@@ -166,11 +166,6 @@ export default {
           to: '/',
         },
         {
-          icon: mdiAccountCircle,
-          name: 'Wie zijn we?',
-          to: '/wie-zijn-we',
-        },
-        {
           icon: mdiHelpCircle,
           name: 'Hoe werkt het?',
           to: '/hoe-werkt-het',
@@ -181,14 +176,19 @@ export default {
           to: '/aanbod',
         },
         {
-          icon: mdiHandWash,
-          name: 'Corona-maatregelen',
-          to: '/corona-maatregelen',
+          icon: mdiAccountCircle,
+          name: 'Wie zijn we?',
+          to: '/wie-zijn-we',
         },
         {
           icon: mdiCardAccountPhone,
           name: 'Contact',
           to: '/contact',
+        },
+        {
+          icon: mdiHandWash,
+          name: 'Corona-maatregelen',
+          to: '/corona-maatregelen',
         },
       ] as NavItem[],
 
