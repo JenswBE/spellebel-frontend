@@ -42,15 +42,9 @@
           <v-row>
             <v-col>
               <p class="text-body-1">
-                Spellebel is een speel-o-theek. Bij ons kan je speelgoed
-                uitlenen, gelijkaardig als bij een bibliotheek. Wij streven er
-                naar om kwaliteitvol speelgoed aan te bieden, zodat onze leden
-                &hellip; Het grote voordeel aan een speel-o-theek is toch dat je
-                ook eens ander, groter of duurder speelgoed kan uitlenen en
-                achteraf gewoon weer kan terug brengen. Ook heel handig voor als
-                je een spel leent dat je eigenlijk niet bevalt, je kan het
-                gewoon weer terug brengen. Zo is er thuis steeds een verscheiden
-                aanbod aan materiaal en heb je geen last van uitpuilende kasten.
+               Spellebel is een speel-o-theek. Bij ons kan je speelgoed uitlenen, net zoals een bibliotheek dat met boeken doet. 
+               Wij streven er naar om een verscheiden aanbod aan te bieden, zo kan je er heel wat “ander” speelgoed vinden 
+               dan dat je thuis al in de kast hebt liggen of wil kopen.
               </p>
             </v-col>
           </v-row>
@@ -112,14 +106,14 @@
             <v-col cols="12" lg="4">
               <p class="text-center text-h6">
                 <v-icon x-large :color="iconColor"> {{ icons.members }}</v-icon>
-                250+
+                200+
               </p>
               <p class="text-center text-uppercase font-weight-bold">leden</p>
             </v-col>
             <v-col cols="12" lg="4">
               <p class="text-center text-h6">
                 <v-icon x-large :color="iconColor"> {{ icons.toys }}</v-icon>
-                500+
+                1000+
               </p>
               <p class="text-center text-uppercase font-weight-bold">
                 stukken speelgoed
@@ -128,7 +122,7 @@
             <v-col cols="12" lg="4">
               <p class="text-center text-h6">
                 <v-icon x-large :color="iconColor"> {{ icons.members }}</v-icon>
-                250+
+                40+
               </p>
               <p class="text-center text-uppercase font-weight-bold">
                 vrijwilligers
