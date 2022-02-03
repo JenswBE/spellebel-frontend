@@ -9,35 +9,36 @@
     </v-row>
     <v-row>
       <v-col>
+        <h2 class="text-h4">Vrijwilligers</h2>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col class="text-body-1">
+        <p class="font-weight-bold text-center pt-5">
+          Wij noemen onze vrijwilligers SPULMERS.
+          <br>Dit letterwoord komt van SPeelotheek-UitLeenMedewekERS 
+        </p>
+        <p>
+          Foto SPULMERS
+        </p>
+        <p class="font-weight-bold text-center pt-5">
+          Word jij ook graag spulmer?
+          <br>Neem dan alvast een kijkje op <nuxt-link to="/spulmer-worden">deze pagina</nuxt-link> !
+        </p>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col>
         <h2 class="text-h4">RVB</h2>
       </v-col>
     </v-row>
     <v-row>
       <v-col class="text-body-1">
         <p>
-          Tekst RVB (als die nodig is) ... 21u15
+          Foto RVB.
         </p>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col>
-        <h2 class="text-h4">Vrijwilligers</h2>
-      </v-col>
-    </v-row>
-    <v-row>
-      <v-col class="text-body-1">
         <p>
-          Aut quisquam veritatis id sint illo qui fuga adipisci eos molestiae
-          culpa nam reprehenderit explicabo. In iste quas rem distinctio vero
-          vel harum reiciendis vel fuga quaerat aut quia modi et itaque nostrum.
-          Aut ipsa natus non dicta omnis et dolorem dolorem qui commodi enim ad
-          nihil eius. Non aspernatur ut nostrum totam 33 pariatur internos et
-          quam sint in voluptatem quia vel repudiandae facere? Et iste quas non
-          asperiores omnis id iusto dolorem et repellat laudantium.
-        </p>
-        <p class="font-weight-bold text-center pt-5">
-          Word jij ook graag spulmer?
-          <nuxt-link to="/contact">Neem dan zeker contact op.</nuxt-link>
+          Tekst RVB door Hild ...
         </p>
       </v-col>
     </v-row>
