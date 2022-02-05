@@ -76,7 +76,7 @@
                 </v-col>
                 <v-col cols="11">
                   <p class="mb-0 ml-2">
-                    <ExtLink :href="`mailto:${contact.email}`">
+                    <ExtLink :to="`mailto:${contact.email}`">
                       {{ contact.email }}
                     </ExtLink>
                   </p>
@@ -103,7 +103,7 @@
                 </v-col>
                 <v-col cols="11">
                   <p class="mb-0 ml-2">
-                    <ExtLink :to="`tel:${contact.phone_number}`">
+                    <ExtLink :to="`https://wa.me/${whatsAppNumber}`">
                       {{ contact.phone_number }}
                     </ExtLink>
                   </p>
@@ -194,6 +194,13 @@ export default Vue.extend({
         },
       },
     }
+  },
+
+  computed: {
+    whatsAppNumber(): string {
+      // See https://faq.whatsapp.com/iphone/how-to-link-to-whatsapp-from-a-different-app/?lang=en
+      return this.contact.phone_number.replace(/\D/g, '') // Only keep numbers
+    },
   },
 
   head(): MetaInfo {
