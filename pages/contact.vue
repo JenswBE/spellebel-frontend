@@ -10,13 +10,14 @@
               </h1>
             </v-col>
           </v-row>
-   <v-row class="py-10">
-      <v-col>
-        Onze speel-o-theek kan je vinden in het Tempelhof.
-        <br>De ingang is aan de achterkant (kant van het park) te vinden.
-      </v-col>
-    </v-row>
- 
+          <v-row class="py-10">
+            <v-col>
+              Onze speel-o-theek kan je vinden in het Tempelhof.
+              <br />De ingang is aan de achterkant (kant van het park) te
+              vinden.
+            </v-col>
+          </v-row>
+
           <v-row align="center">
             <v-col cols="12" lg="3">
               <v-row align="center">
@@ -159,6 +160,8 @@ import {
 import { CONTACT } from '../constants/contact'
 
 export default Vue.extend({
+  layout: 'no-footer',
+
   data() {
     return {
       contact: CONTACT,
