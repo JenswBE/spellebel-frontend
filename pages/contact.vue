@@ -10,13 +10,14 @@
               </h1>
             </v-col>
           </v-row>
-   <v-row class="py-10">
-      <v-col>
-        Onze speel-o-theek kan je vinden in het Tempelhof.
-        <br>De ingang is aan de achterkant (kant van het park) te vinden.
-      </v-col>
-    </v-row>
- 
+          <v-row class="py-10">
+            <v-col>
+              Onze speel-o-theek kan je vinden in het Tempelhof.
+              <br />De ingang is aan de achterkant (kant van het park) te
+              vinden.
+            </v-col>
+          </v-row>
+
           <v-row align="center">
             <v-col cols="12" lg="3">
               <v-row align="center">
@@ -75,7 +76,7 @@
                 </v-col>
                 <v-col cols="11">
                   <p class="mb-0 ml-2">
-                    <ExtLink :href="`mailto:${contact.email}`">
+                    <ExtLink :to="`mailto:${contact.email}`">
                       {{ contact.email }}
                     </ExtLink>
                   </p>
@@ -102,7 +103,7 @@
                 </v-col>
                 <v-col cols="11">
                   <p class="mb-0 ml-2">
-                    <ExtLink :to="`tel:${contact.phone_number}`">
+                    <ExtLink :to="`https://wa.me/${whatsAppNumber}`">
                       {{ contact.phone_number }}
                     </ExtLink>
                   </p>
@@ -159,6 +160,8 @@ import {
 import { CONTACT } from '../constants/contact'
 
 export default Vue.extend({
+  layout: 'no-footer',
+
   data() {
     return {
       contact: CONTACT,
@@ -191,6 +194,13 @@ export default Vue.extend({
         },
       },
     }
+  },
+
+  computed: {
+    whatsAppNumber(): string {
+      // See https://faq.whatsapp.com/iphone/how-to-link-to-whatsapp-from-a-different-app/?lang=en
+      return this.contact.phone_number.replace(/\D/g, '') // Only keep numbers
+    },
   },
 
   head(): MetaInfo {

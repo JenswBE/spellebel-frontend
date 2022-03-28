@@ -112,6 +112,8 @@ import Vue from 'vue'
 import { MetaInfo } from 'vue-meta'
 
 export default Vue.extend({
+  layout: 'no-footer',
+
   head(): MetaInfo {
     return {
       title: 'Hoe werkt het?',

@@ -3952,10 +3952,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.20.3":
-  version: 3.20.3
-  resolution: "core-js@npm:3.20.3"
-  checksum: 2106cdfb1330abf9e27d577666fc0421feafe8c39bb5af90a63af16e9706c767a7e3a82edc21ce3ed6b9d806f3200d1cf6cc3d0597a8c0af12dbec287c781d65
+"core-js@npm:^3.21.1":
+  version: 3.21.1
+  resolution: "core-js@npm:3.21.1"
+  checksum: d68eddd831340ad5b24ac29c72fda022a43b17f194c4278b6b875a843283d316502cb4abd07f28631d6ebc4387f66aa06e2b1b3c8fd7e08096a751b5c63f6889
   languageName: node
   linkType: hard
 
@@ -4870,14 +4870,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-prettier@npm:^8.3.0":
-  version: 8.3.0
-  resolution: "eslint-config-prettier@npm:8.3.0"
+"eslint-config-prettier@npm:^8.5.0":
+  version: 8.5.0
+  resolution: "eslint-config-prettier@npm:8.5.0"
   peerDependencies:
     eslint: ">=7.0.0"
   bin:
     eslint-config-prettier: bin/cli.js
-  checksum: df4cea3032671995bb5ab07e016169072f7fa59f44a53251664d9ca60951b66cdc872683b5c6a3729c91497c11490ca44a79654b395dd6756beb0c3903a37196
+  checksum: 0d0f5c32e7a0ad91249467ce71ca92394ccd343178277d318baf32063b79ea90216f4c81d1065d60f96366fdc60f151d4d68ae7811a58bd37228b84c2083f893
   languageName: node
   linkType: hard
 
@@ -10684,12 +10684,12 @@ __metadata:
     "@nuxt/typescript-build": ^2.1.0
     "@nuxtjs/axios": ^5.13.6
     "@nuxtjs/vuetify": ^1.12.3
-    core-js: ^3.20.3
-    eslint-config-prettier: ^8.3.0
+    core-js: ^3.21.1
+    eslint-config-prettier: ^8.5.0
     nuxt: ^2.15.8
     nuxt-leaflet: ^0.0.27
     prettier: ^2.5.1
-    vuetify: ^2.6.3
+    vuetify: ^2.6.4
   languageName: unknown
   linkType: soft
 
@@ -11845,12 +11845,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.6.3":
-  version: 2.6.3
-  resolution: "vuetify@npm:2.6.3"
+"vuetify@npm:^2.6.4":
+  version: 2.6.4
+  resolution: "vuetify@npm:2.6.4"
   peerDependencies:
     vue: ^2.6.4
-  checksum: f50a4c9d22c578a6a3d0c7def9ac3741a146a65aaf997062bf963e7ad8b1b2479c122f3f594694bb00293baec6e081d2f73f97bebbc9ce10a01e36096478b088
+  checksum: 8ae236ff92df0d1584942da3893d0a9cead1141c72bc12bd113786351935f3fdcc8f30de6e05cc9b9754e07669464808e6b6979775d691a68f3574ba6e577bfa
   languageName: node
   linkType: hard
 
