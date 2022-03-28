@@ -48,16 +48,16 @@
     </v-row>
     <v-row>
       <v-col>
-        <h2 class="text-h4">RVB</h2>
+        <h2 class="text-h4">Raad van Bestuur (RVB)</h2>
       </v-col>
     </v-row>
     <v-row>
       <v-col class="text-body-1">
         <p>
-          Foto RVB.
+          An, Gery, Hild, Ine, Mark, Monique, Ria, Sarah en Tine steken maandelijks de koppen bij elkaar om al wat achter de schermen moet gebeuren in goede banen te leiden.  
+          Zij vormen het bestuur van Spellebel. Zij waken over een breed en kwaliteitsvol aanbod van speelgoed en zij leggen contacten met de spulmers en met andere instanties.  
         </p>
         <p>
-          Tekst RVB door Hild ...
         </p>
       </v-col>
     </v-row>
