@@ -68,32 +68,6 @@
         </v-container>
       </v-col>
     </v-row>
-    <v-row class="py-15">
-      <v-col lg="6" offset-lg="3" class="pt-10">
-        <v-container>
-          <v-row align="center">
-            <v-col cols="10" offset="1" lg="3">
-              <v-img src="/img/corona-small.jpg" class="rounded-circle" />
-            </v-col>
-            <v-col order-lg="first">
-              <h2 class="text-h4 pb-2">Corona-maatregelen</h2>
-              <p>
-                Helaas moeten we ons nog steeds houden aan de
-                Corona-maatregelen.
-              </p>
-              <p>Vergeet daarom zeker jullie masker niet!</p>
-              <p>
-                Neem daarnaast ook even een kijkje bij
-                <nuxt-link to="/corona-maatregelen">
-                  de andere maatregelen
-                </nuxt-link>
-                .
-              </p>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-col>
-    </v-row>
     <v-row no-gutters class="py-15">
       <v-col>
         <v-container>
