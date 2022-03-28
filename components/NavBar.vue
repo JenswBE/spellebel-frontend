@@ -119,11 +119,6 @@ export default Vue.extend({
           name: 'Contact',
           to: '/contact',
         },
-        {
-          icon: mdiHandWash,
-          name: 'Corona-maatregelen',
-          to: '/corona-maatregelen',
-        },
       ] as NavItem[],
     }
   },
