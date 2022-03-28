@@ -58,16 +58,11 @@ export default Vue.extend({
       {
         name: 'Beweging (B)',
         slug: 'beweging',
-        img: '/img/categories/buiten-small.jpg',
+        img: '/img/categories/beweging.jpg',
       },
       {
         name: 'Constructie (C)',
         slug: 'constructie',
-        img: '/img/categories/constructie-small.jpg',
-      },
-      {
-        name: 'Expressie (E)',
-        slug: 'expressie',
         img: '/img/categories/constructie-small.jpg',
       },
       {
@@ -83,7 +78,7 @@ export default Vue.extend({
       {
         name: 'Puzzels (P)',
         slug: 'puzzels',
-        img: '/img/categories/constructie-small.jpg',
+        img: '/img/categories/puzzels.jpg',
       },
       {
         name: 'Zintuiglijk (Z)',
