@@ -24,14 +24,6 @@
       </v-col>
     </v-row>
     <v-row>
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-constructie/constructie (1).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
      <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
