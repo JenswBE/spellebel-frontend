@@ -35,7 +35,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (2).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (2).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -67,7 +67,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (6).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (6).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -91,7 +91,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (9).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (9).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -99,7 +99,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (10).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (10).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -107,7 +107,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (11).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (11).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -115,7 +115,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (12).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (12).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -123,7 +123,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (13).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (13).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -147,7 +147,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (16).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (16).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
@@ -155,7 +155,7 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (17).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-fantasie/fantasie (17).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
