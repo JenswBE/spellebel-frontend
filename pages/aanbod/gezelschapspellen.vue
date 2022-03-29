@@ -29,7 +29,159 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/binnen.jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (1).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (2).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (3).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (4).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (5).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (6).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (7).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (8).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (9).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (10).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (11).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (12).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (13).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (14).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (15).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (16).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (17).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (18).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (19).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-gezelschapspellen/gezelschapspellen (20).jpg" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
