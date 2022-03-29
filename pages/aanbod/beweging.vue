@@ -27,7 +27,143 @@
       <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/binnen.jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-beweging/beweging (1).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (2).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (3).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (4).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (5).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (6).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (7).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (8).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (9).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (10).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (11).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (12).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (13).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (14).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (15).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (16).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (17).jpg" class="align-end" height="300px">
+          </v-img>
+        </v-card>
+      </v-col>
+      <!-- Einde van een product -->
+      <!-- Start van een product -->
+      <v-col cols="12" sm="4" md="3">
+        <v-card>
+          <v-img src="/img/aanbod-beweging/beweging (18).jpg" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
