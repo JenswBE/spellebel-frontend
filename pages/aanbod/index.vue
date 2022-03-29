@@ -83,7 +83,7 @@ export default Vue.extend({
       {
         name: 'Zintuiglijk (Z)',
         slug: 'zintuiglijk',
-        img: '/img/categories/constructie-small.jpg',
+        img: '/img/categories/zintuiglijk.jpg',
       },
     ],
   }),
