@@ -91,7 +91,7 @@
      <!-- Start van een product -->
       <v-col cols="12" sm="4" md="3">
         <v-card>
-          <v-img src="/img/aanbod-constructie/constructie (9).jpg" class="align-end" height="300px">
+          <v-img src="/img/aanbod-constructie/constructie (9).JPG" class="align-end" height="300px">
           </v-img>
         </v-card>
       </v-col>
