@@ -1296,10 +1296,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@mdi/js@npm:^6.5.95":
-  version: 6.5.95
-  resolution: "@mdi/js@npm:6.5.95"
-  checksum: b1db7713d216c119f584bf973514a2f9d8f2e671e91bf19ce8e56cfa7a9843c0a060328e794507ac31f2bded1032123294f39ff8e987ea5acb2719ab522ef146
+"@mdi/js@npm:^6.6.96":
+  version: 6.6.96
+  resolution: "@mdi/js@npm:6.6.96"
+  checksum: e08976435a83d7ac49a606533eae941ca0b271396a1dfac06862edc131e71354c9fccd63ba4a6a0afceed96b135df6e08e4bdf2d92eae62653db8aa583ac0860
   languageName: node
   linkType: hard
 
@@ -9383,12 +9383,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.5.1":
-  version: 2.5.1
-  resolution: "prettier@npm:2.5.1"
+"prettier@npm:^2.6.2":
+  version: 2.6.2
+  resolution: "prettier@npm:2.6.2"
   bin:
     prettier: bin-prettier.js
-  checksum: 21b9408476ea1c544b0e45d51ceb94a84789ff92095abb710942d780c862d0daebdb29972d47f6b4d0f7ebbfb0ffbf56cc2cfa3e3e9d1cca54864af185b15b66
+  checksum: 48d08dde8e9fb1f5bccdd205baa7f192e9fc8bc98f86e1b97d919de804e28c806b0e6cc685e4a88211aa7987fa9668f30baae19580d87ced3ed0f2ec6572106f
   languageName: node
   linkType: hard
 
@@ -10679,7 +10679,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "spellebel-frontend@workspace:."
   dependencies:
-    "@mdi/js": ^6.5.95
+    "@mdi/js": ^6.6.96
     "@nuxt/types": ^2.15.8
     "@nuxt/typescript-build": ^2.1.0
     "@nuxtjs/axios": ^5.13.6
@@ -10688,7 +10688,7 @@ __metadata:
     eslint-config-prettier: ^8.5.0
     nuxt: ^2.15.8
     nuxt-leaflet: ^0.0.27
-    prettier: ^2.5.1
+    prettier: ^2.6.2
     vuetify: ^2.6.4
   languageName: unknown
   linkType: soft
