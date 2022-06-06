@@ -63,7 +63,7 @@ export default Vue.extend({
       {
         name: 'Constructie (C)',
         slug: 'constructie',
-        img: '/img/categories/constructie-small.jpg',
+        img: '/img/categories/constructie.jpg',
       },
       {
         name: 'Fantasie (F)',
