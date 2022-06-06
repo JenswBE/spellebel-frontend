@@ -41,8 +41,11 @@
           lachen en genieten van onze fijne teamsfeer.
         </p>
         <p>
+          <v-img src="/img/groepsfoto_schapenhof.jpg" />
+        </p>
+        <p>
           Kom jij graag ons vrijwilligersteam versterken ?
-          <br>Neem dan alvast een kijkje op <nuxt-link to="/spulmer-worden">deze pagina</nuxt-link> !
+          <br>Neem dan alvast een kijkje op <nuxt-link to="/spulmer-worden">deze (nog te maken) pagina</nuxt-link> !
         </p>
       </v-col>
     </v-row>
