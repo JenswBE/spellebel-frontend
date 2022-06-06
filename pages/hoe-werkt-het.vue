@@ -65,13 +65,14 @@
                 <td>€25</td>
               </tr>
               <tr>
-                <td>Abonnement D-Kaart</td>
+                <td>Abonnement D-Kaart *</td>
                 <td>3 stuks</td>
                 <td>€5</td>
               </tr>
             </tbody>
           </template>
         </v-simple-table>
+        * meer info op de site van <ext-link "https://www.de-watertoren.be/"> Watertoren - Beerse</ext-link>
       </v-col>
     </v-row>
     <v-row>
