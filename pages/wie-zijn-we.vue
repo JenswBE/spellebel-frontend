@@ -54,7 +54,7 @@
     <v-row>
       <v-col class="text-body-1">
         <p>
-          An, Gery, Hild, Ine, Mark, Monique, Ria, Sarah en Tine steken maandelijks de koppen bij elkaar om al wat achter de schermen moet gebeuren in goede banen te leiden.  
+          An, Gery, Hild, Ine, Mark, Monique, Ria, Sarah en Tine steken maandelijks de koppen bij elkaar om wat achter de schermen moet gebeuren in goede banen te leiden.  
           Zij vormen samen het bestuur van Spellebel. Zij waken over een breed en kwaliteitsvol aanbod van speelgoed en leggen contacten met de spulmers en met andere instanties.  
         </p>
         <p>
