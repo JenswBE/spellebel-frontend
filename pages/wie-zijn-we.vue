@@ -41,7 +41,7 @@
           lachen en genieten van onze fijne teamsfeer.
         </p>
         <p>
-          <v-img src="/img/groepsfoto_schapenhof.jpg" />
+          <v-img  src="/img/groepsfoto_schapenhof.jpg"  max-width="400"  / >
         </p>
         <p>
           Kom jij graag ons vrijwilligersteam versterken ?
