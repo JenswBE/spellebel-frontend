@@ -72,7 +72,9 @@
             </tbody>
           </template>
         </v-simple-table>
+        <p>
         * meer info op de site van <nuxt-link to="www.de-watertoren.be/"> Watertoren - Beerse</nuxt-link>
+        </p>
       </v-col>
     </v-row>
     <v-row>
