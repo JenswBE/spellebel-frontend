@@ -24,166 +24,18 @@
       </v-col>
     </v-row>
     <v-row>
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
+      <v-col
+        cols="12"
+        sm="4"
+        md="3"
+        lg="2"
+        v-for="product in products"
+        :key="product"
+      >
         <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (1).jpg" class="align-end" height="300px">
-          </v-img>
+          <v-img :src="product" height="300px"> </v-img>
         </v-card>
       </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (2).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (3).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (4).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (5).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (6).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (7).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (8).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (9).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (10).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (11).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (12).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (13).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (14).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (15).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (16).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (17).JPG" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (18).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (19).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
-      <!-- Start van een product -->
-      <v-col cols="12" sm="4" md="3">
-        <v-card>
-          <v-img src="/img/aanbod-fantasie/fantasie (20).jpg" class="align-end" height="300px">
-          </v-img>
-        </v-card>
-      </v-col>
-      <!-- Einde van een product -->
     </v-row>
     <v-row>
       <v-col>
@@ -203,6 +55,28 @@ import { mdiArrowLeft } from '@mdi/js'
 
 export default Vue.extend({
   data: () => ({
+    products: [
+      '/img/aanbod-fantasie/fantasie-1.jpg',
+      '/img/aanbod-fantasie/fantasie-2.jpg',
+      '/img/aanbod-fantasie/fantasie-3.jpg',
+      '/img/aanbod-fantasie/fantasie-4.jpg',
+      '/img/aanbod-fantasie/fantasie-5.jpg',
+      '/img/aanbod-fantasie/fantasie-6.jpg',
+      '/img/aanbod-fantasie/fantasie-7.jpg',
+      '/img/aanbod-fantasie/fantasie-8.jpg',
+      '/img/aanbod-fantasie/fantasie-9.jpg',
+      '/img/aanbod-fantasie/fantasie-10.jpg',
+      '/img/aanbod-fantasie/fantasie-11.jpg',
+      '/img/aanbod-fantasie/fantasie-12.jpg',
+      '/img/aanbod-fantasie/fantasie-13.jpg',
+      '/img/aanbod-fantasie/fantasie-14.jpg',
+      '/img/aanbod-fantasie/fantasie-15.jpg',
+      '/img/aanbod-fantasie/fantasie-16.jpg',
+      '/img/aanbod-fantasie/fantasie-17.jpg',
+      '/img/aanbod-fantasie/fantasie-18.jpg',
+      '/img/aanbod-fantasie/fantasie-19.jpg',
+      '/img/aanbod-fantasie/fantasie-20.jpg',
+    ],
     icons: {
       arrowLeft: mdiArrowLeft,
     },
