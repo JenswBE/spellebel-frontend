@@ -2,7 +2,7 @@
   <a
     :href="to"
     rel="noopener"
-    class="text-decoration-none"
+    :class="classes"
     :target="newTab ? '_blank' : '_self'"
   >
     <slot></slot>
@@ -24,6 +24,20 @@ export default Vue.extend({
       type: Boolean,
       default: true,
     } as PropOptions<Boolean>,
+    removeUnderline: {
+      type: Boolean,
+      default: false,
+    } as PropOptions<Boolean>,
+  },
+
+  computed: {
+    classes() {
+      let classesList = [] as String[]
+      if (this.removeUnderline) {
+        classesList.push('text-decoration-none')
+      }
+      return classesList
+    },
   },
 })
 </script>

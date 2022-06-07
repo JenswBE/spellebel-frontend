@@ -66,7 +66,10 @@
                 </v-col>
                 <v-col cols="11" class="pb-0">
                   <p class="mb-0 ml-2">
-                    <ExtLink :to="`tel:${contact.phone_number}`">
+                    <ExtLink
+                      :to="`tel:${contact.phone_number}`"
+                      :removeUnderline="true"
+                    >
                       {{ contact.phone_number }}
                     </ExtLink>
                   </p>
@@ -76,7 +79,10 @@
                 </v-col>
                 <v-col cols="11">
                   <p class="mb-0 ml-2">
-                    <ExtLink :to="`mailto:${contact.email}`">
+                    <ExtLink
+                      :to="`mailto:${contact.email}`"
+                      :removeUnderline="true"
+                    >
                       {{ contact.email }}
                     </ExtLink>
                   </p>
@@ -93,7 +99,10 @@
                 </v-col>
                 <v-col cols="11" class="pb-0">
                   <p class="mb-0 ml-2">
-                    <ExtLink :to="contact.social.facebook.url">
+                    <ExtLink
+                      :to="contact.social.facebook.url"
+                      :removeUnderline="true"
+                    >
                       {{ contact.social.facebook.name }}
                     </ExtLink>
                   </p>
@@ -103,7 +112,10 @@
                 </v-col>
                 <v-col cols="11">
                   <p class="mb-0 ml-2">
-                    <ExtLink :to="`https://wa.me/${whatsAppNumber}`">
+                    <ExtLink
+                      :to="`https://wa.me/${whatsAppNumber}`"
+                      :removeUnderline="true"
+                    >
                       {{ contact.phone_number }}
                     </ExtLink>
                   </p>

@@ -57,7 +57,7 @@ import { mdiArrowLeft } from '@mdi/js'
 import Vue, { PropOptions } from 'vue'
 
 export default Vue.extend({
-  name: 'ExtLink',
+  name: 'Aanbod',
 
   props: {
     title: {
