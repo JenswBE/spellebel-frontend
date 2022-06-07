@@ -171,7 +171,7 @@ export default {
       aanbodThumb: {
         modifiers: {
           format: 'jpg',
-          width: 250,
+          width: 300,
           height: 250,
         },
       },

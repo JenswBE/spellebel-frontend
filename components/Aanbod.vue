@@ -3,7 +3,7 @@
     <v-row class="py-10">
       <v-col>
         <h1 class="text-h3">
-          <span class="spellebel-title" :v-text="title"></span>
+          <span class="spellebel-title" v-text="title"></span>
         </h1>
       </v-col>
     </v-row>
@@ -25,7 +25,7 @@
     </v-row>
     <v-row>
       <v-col
-        cols="12"
+        cols="6"
         sm="4"
         md="3"
         lg="2"
@@ -35,7 +35,7 @@
         <v-card>
           <v-img
             :src="$img(product, { quality: 80 }, { preset: 'aanbodThumb' })"
-            height="300px"
+            height="250px"
           >
           </v-img>
         </v-card>
