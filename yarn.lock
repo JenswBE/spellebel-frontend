@@ -5599,6 +5599,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"fslightbox-vue@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "fslightbox-vue@npm:2.0.1"
+  peerDependencies:
+    vue: ">=2.5.0"
+  checksum: 4cba04f02dc530c3e5ca6b3056710d3fc2a6dcbd307d0d06a2d3ae0fc7c3f8be931deb85c187201af4d17c1ae7566de2ee1530c6c721a2223ac6c45b1d36f9c9
+  languageName: node
+  linkType: hard
+
 "function-bind@npm:^1.1.1":
   version: 1.1.1
   resolution: "function-bind@npm:1.1.1"
@@ -11193,6 +11202,7 @@ __metadata:
     "@nuxtjs/vuetify": ^1.12.3
     core-js: ^3.22.8
     eslint-config-prettier: ^8.5.0
+    fslightbox-vue: ^2.0.1
     jpeg-autorotate: ^8.0.1
     nuxt: ^2.15.8
     nuxt-leaflet: ^0.0.27

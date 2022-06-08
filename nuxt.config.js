@@ -168,14 +168,14 @@ export default {
 
   image: {
     presets: {
-      aanbodThumb: {
+      aanbodThumbnail: {
         modifiers: {
           format: 'jpg',
           width: 300,
           height: 250,
         },
       },
-      aanbodLarge: {
+      aanbodLightbox: {
         modifiers: {
           format: 'jpg',
           width: 1920,

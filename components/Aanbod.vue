@@ -29,16 +29,26 @@
         sm="4"
         md="3"
         lg="2"
-        v-for="product in products"
+        v-for="(product, index) in products"
         :key="product"
       >
-        <v-card>
-          <v-img
-            :src="$img(product, { quality: 80 }, { preset: 'aanbodThumb' })"
-            height="250px"
+        <v-hover v-slot="{ hover }">
+          <v-card
+            @click="
+              lightbox.toggler = !lightbox.toggler
+              lightbox.index = index
+            "
+            :elevation="hover ? 10 : 2"
           >
-          </v-img>
-        </v-card>
+            <v-img
+              :src="
+                $img(product, { quality: 80 }, { preset: 'aanbodThumbnail' })
+              "
+              height="250px"
+            >
+            </v-img>
+          </v-card>
+        </v-hover>
       </v-col>
     </v-row>
     <v-row>
@@ -49,31 +59,58 @@
         </v-btn>
       </v-col>
     </v-row>
+
+    <div>
+      <FsLightbox
+        :toggler="lightbox.toggler"
+        :sourceIndex="lightbox.index"
+        :sources="lightboxImages"
+      />
+    </div>
   </v-container>
 </template>
 
 <script lang="ts">
 import { mdiArrowLeft } from '@mdi/js'
 import Vue, { PropOptions } from 'vue'
+import FsLightbox from 'fslightbox-vue'
 
 export default Vue.extend({
   name: 'Aanbod',
+
+  components: { FsLightbox },
 
   props: {
     title: {
       type: String,
       required: true,
-    } as PropOptions<String>,
+    } as PropOptions<string>,
     products: {
       type: Array,
       required: true,
-    } as PropOptions<String[]>,
+    } as PropOptions<string[]>,
   },
 
   data: () => ({
+    lightbox: {
+      toggler: false,
+      index: 0,
+    },
     icons: {
       arrowLeft: mdiArrowLeft,
     },
   }),
+
+  computed: {
+    lightboxImages() {
+      return this.products.map((i) =>
+        this.$img(
+          i,
+          { quality: 80, fit: 'inside' },
+          { preset: 'aanbodLightbox' }
+        )
+      )
+    },
+  },
 })
 </script>
