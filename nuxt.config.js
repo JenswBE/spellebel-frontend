@@ -1,6 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
 import fs from 'fs'
-import jpegAutoRotate from 'jpeg-autorotate'
 import path from 'path'
 
 export default {
@@ -217,6 +216,8 @@ function getImgPath() {
 }
 
 function rotateImageEXIF(imgPath) {
+  let jpegAutoRotate = require('jpeg-autorotate')
+
   if (!imgPath.endsWith('.jpg') && !imgPath.endsWith('.jpeg')) {
     // This function should only handle JPG images
     return
