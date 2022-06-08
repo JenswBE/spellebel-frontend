@@ -1,14 +1,24 @@
-# Build application
-FROM node:lts-alpine as builder
-WORKDIR /app
+# Based on https://github.com/nuxt/nuxt.js/blob/dev/examples/docker-build/Dockerfile
+
+ARG NODE_IMAGE=node:lts-alpine
+
+# Setup builder
+FROM ${NODE_IMAGE} as builder
+WORKDIR /src
 COPY . .
-RUN yarn
-RUN yarn generate
+
+# Build application
+RUN yarn install --immutable
+RUN yarn build
+
+# Only install Production dependencies
+RUN rm -rf node_modules
+RUN NODE_ENV=production yarn workspaces focus --all --production
+RUN yarn cache clean --all
 
 # Build final image
-FROM nginxinc/nginx-unprivileged:stable-alpine
-ARG SERVICE_NAME
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-COPY --from=builder /app/dist /usr/share/nginx/html
+FROM ${NODE_IMAGE}
+WORKDIR /src
+COPY --from=builder /src  .
 EXPOSE 8080
-CMD ["nginx", "-g", "daemon off;"]
+CMD [ "yarn", "start", "--hostname", "0.0.0.0", "--port", "8080" ]

@@ -14,7 +14,7 @@ export default {
   ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -128,15 +128,16 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/vuetify
     '@nuxtjs/vuetify',
-    // https://image.nuxtjs.org
-    '@nuxt/image',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://github.com/schlunsen/nuxt-leaflet
     'nuxt-leaflet',
+    // https://image.nuxtjs.org
+    '@nuxt/image',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -216,7 +217,7 @@ function getImgPath() {
 }
 
 function rotateImageEXIF(imgPath) {
-  if (!imgPath.endsWith(".jpg") && !imgPath.endsWith(".jpeg")) {
+  if (!imgPath.endsWith('.jpg') && !imgPath.endsWith('.jpeg')) {
     // This function should only handle JPG images
     return
   }
