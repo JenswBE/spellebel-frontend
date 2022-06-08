@@ -21,6 +21,9 @@
           Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs
           om alles te ontdekken!
         </p>
+        <p class="text-body-1">
+          Klik op de voorbeelden om de volledige foto te zien.
+        </p>
       </v-col>
     </v-row>
     <v-row>
