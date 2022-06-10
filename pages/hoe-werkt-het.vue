@@ -37,11 +37,6 @@
       </v-col>
     </v-row>
     <v-row>
-      <v-col>
-        <h2 class="text-h4">Abonnementen :</h2>
-      </v-col>
-    </v-row>
-    <v-row>
       <v-col class="text-body-1">
         <p>Wij werken met 3 types abonnement :</p>
         <v-simple-table>
