@@ -18,8 +18,8 @@
     <v-row>
       <v-col>
         <p class="text-body-1">
-         Onze gezelschapspelen zijn opgedeeld in 4 leeftijdsgroepen met elk een  eigen kleur (zie gekleurde stickers).
-        </p>
+         Onze gezelschapspelen zijn opgedeeld in 4 leeftijdsgroepen met elk een  eigen kleur.<br>
+         Deze kan je telkens terug vinden op de doos : groen (2+) - rood (4+) - geel (6+) - blauw (8+).
         <p class="text-body-1">
           Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs om alles te ontdekken!
         </p>
