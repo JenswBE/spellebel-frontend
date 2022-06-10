@@ -46,6 +46,20 @@
                <br>Wij streven er naar om een verscheiden aanbod aan te bieden. Zo kan je er heel wat “ander” speelgoed vinden 
                dan dat je thuis al in de kast hebt liggen of wil kopen.
               </p>
+              <p>
+                Spelen is voor iedereen, klein of groot.<br>
+	                Soms ben je leeuw of danser of piloot.<br><br>
+                Spelen is winnen en soms ook verliezen.<br>
+	                Soms beslist de andere, soms moet jij kiezen.<br><br>
+                Spelen is denken en tellen van 2, 4, 6, 8.<br>
+	                Jij gaat verstoppen en ik sta op wacht.<br><br>
+                Spelen is hoelahoepen of racen, alleen of met 2.<br>
+	                Spelen is zeggen: ‘Doe jij ook mee?’<br><br>
+                Spelen is waarheid, durven of doen.<br>
+	                Iedereen is held, iedereen is kampioen.<br><br>
+                Spelen is proberen, soms meerdere keren.<br><br>
+	                Spelen is een recht want spelen is leren.
+              </p>
             </v-col>
           </v-row>
         </v-container>
