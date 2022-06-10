@@ -58,7 +58,7 @@
                 Spelen is waarheid, durven of doen.<br>
 	                Iedereen is held, iedereen is kampioen.<br><br>
                 Spelen is proberen, soms meerdere keren.<br><br>
-	                Spelen is een recht want spelen is leren.
+	                Spelen is een recht want spelen is leren.<br>
               </p>
             </v-col>
           </v-row>
