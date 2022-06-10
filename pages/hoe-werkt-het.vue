@@ -38,7 +38,7 @@
     </v-row>
     <v-row>
       <v-col class="text-body-1">
-        <p>Wij werken met 3 types abonnement :</p>
+        <p>Wij werken met 3 types abonnement : </p>
         <v-simple-table>
           <template v-slot:default>
             <thead>
