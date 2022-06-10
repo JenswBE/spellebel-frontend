@@ -78,6 +78,7 @@
             <li>... lost problemen op waar die zich stellen</li>
             <li>... organiseert 2 x per jaar een algemene vergadering</li>
             <li>... zorgt ervoor dat Spellebel Spellebel kan zijn !</li>
+          </ul>
         </p>
       </v-col>
     </v-row>

@@ -1,4 +1,6 @@
 import colors from 'vuetify/es5/util/colors'
+import fs from 'fs'
+import path from 'path'
 
 export default {
   server: {
@@ -11,7 +13,7 @@ export default {
   ssr: true,
 
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -131,7 +133,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    // https://github.com/schlunsen/nuxt-leaflet
     'nuxt-leaflet',
+    // https://image.nuxtjs.org
+    '@nuxt/image',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
@@ -161,6 +166,83 @@ export default {
     },
   },
 
-  // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  image: {
+    presets: {
+      aanbodThumbnail: {
+        modifiers: {
+          format: 'jpg',
+          width: 300,
+          height: 250,
+        },
+      },
+      aanbodLightbox: {
+        modifiers: {
+          format: 'jpg',
+          width: 1920,
+          height: 1080,
+        },
+      },
+    },
+  },
+
+  hooks: {
+    build: {
+      before(nuxt, buildOptions) {
+        walkDir(getImgPath(), rotateImageEXIF)
+      },
+    },
+    generator: {
+      before(generator, generateOptions) {
+        walkDir(getImgPath(), rotateImageEXIF)
+      },
+    },
+  },
+}
+
+// Based on https://allenhwkim.medium.com/nodejs-walk-directory-f30a2d8f038f
+function walkDir(dir, callback) {
+  fs.readdirSync(dir).forEach((f) => {
+    const absPath = path.join(dir, f)
+    if (fs.statSync(absPath).isDirectory()) {
+      walkDir(absPath, callback)
+    } else {
+      callback(absPath)
+    }
+  })
+}
+
+function getImgPath() {
+  return path.join(process.cwd(), 'static', 'img')
+}
+
+function rotateImageEXIF(imgPath) {
+  let jpegAutoRotate = require('jpeg-autorotate')
+
+  if (!imgPath.endsWith('.jpg') && !imgPath.endsWith('.jpeg')) {
+    // This function should only handle JPG images
+    return
+  }
+
+  jpegAutoRotate
+    .rotate(imgPath)
+    .then(({ buffer, orientation, dimensions, quality }) => {
+      fs.writeFile(imgPath, buffer, (err) => {
+        if (err) {
+          console.error(`Failed to write rotated image to ${imgPath}`)
+        } else {
+          console.log(
+            `Rotated image ${imgPath} and set Orientation in EXIF to 1.`
+          )
+        }
+      })
+    })
+    .catch((err) => {
+      if (
+        err.code !== jpegAutoRotate.errors.no_orientation &&
+        err.code !== jpegAutoRotate.errors.correct_orientation
+      ) {
+        // This error shouldn't have occurred
+        console.error(`Failed to rotate image ${imgPath}. Error: `, err)
+      }
+    })
 }
