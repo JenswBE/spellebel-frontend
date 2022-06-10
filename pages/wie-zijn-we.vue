@@ -10,7 +10,7 @@
     <v-row>
       <v-col class="text-body-1">
         <p>
-        Spellebel is een erkende vereniging die gesubsidieerd wordt door de Lokaal Bestuur Beerse.  
+        Spellebel is een erkende vereniging die gesubsidieerd wordt door Lokaal Bestuur Beerse.  
         </p>
       </v-col>
     </v-row>
