@@ -8,6 +8,13 @@
       </v-col>
     </v-row>
     <v-row>
+      <v-col class="text-body-1">
+        <p>
+        Spellebel is een herkende gesubsidieerde vereniging, die financieel ondersteund wordt door de Lokaal Bestuur Beerse. 
+        </p>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col>
         <h2 class="text-h4">Onze vrijwilligers</h2>
       </v-col>
