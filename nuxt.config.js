@@ -110,6 +110,14 @@ export default {
         href: 'https://fonts.googleapis.com/css?family=Cantata+One|Spartan:300,400,500,600,700&display=swap',
       },
     ],
+    script: [
+      {
+        src: 'https://stats-spellebel.jensw.be/count.js',
+        'data-goatcounter': 'https://stats-spellebel.jensw.be/count',
+        async: true,
+        defer: true,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
