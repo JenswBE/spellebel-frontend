@@ -154,7 +154,6 @@ export default {
   vuetify: {
     treeShake: true,
     defaultAssets: false,
-    customVariables: ['~/assets/variables.scss'],
     icons: {
       iconfont: 'mdiSvg',
     },
