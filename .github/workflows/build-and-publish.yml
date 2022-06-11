@@ -23,13 +23,12 @@ jobs:
           import os, re, sys
           tag = os.environ['GITHUB_REF'].split('/').pop()
           print(f"Tag: {tag}")
-          semverRegex = r"^v\d+\.\d+\.\d+$"
+          stableRegex = r"^v\d+$"
           if tag == 'main':
             tags = ['latest']
             container_name = "spellebel-test"
-          elif re.match(semverRegex, tag):
-            tag_parts = tag.split(".")
-            tags = ['stable', tag, tag_parts[0], f"{tag_parts[0]}.{tag_parts[1]}"]
+          elif re.match(stableRegex, tag):
+            tags = ['stable', tag]
             container_name = "spellebel"
           else:
             sys.exit(f"Invalid tag {tag}. Must be main or a semver tag")

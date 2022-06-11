@@ -1,0 +1,1 @@
+See https://nuxtjs.org/docs/configuration-glossary/configuration-servermiddleware/#custom-api-endpoint
