@@ -17,6 +17,7 @@
     </v-row>
     <v-row>
       <v-col>
+        <p v-if="description" v-html="description" class="text-body-1"></p>
         <p class="text-body-1">
           Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs
           om alles te ontdekken!
@@ -87,6 +88,10 @@ export default Vue.extend({
     title: {
       type: String,
       required: true,
+    } as PropOptions<string>,
+    description: {
+      type: String,
+      required: false,
     } as PropOptions<string>,
     products: {
       type: Array,
