@@ -2,7 +2,7 @@
   <Aanbod
     title="Gezelschapspellen (G)"
     :products="products"
-    description="Onze gezelschapspelen zijn opgedeeld in 4 leeftijdsgroepen met elk een eigen kleur.
+    description="Onze gezelschapspelen zijn opgedeeld in 4 leeftijdsgroepen met elk een eigen kleur.<br>
          Deze kan je telkens terug vinden op de doos: groen (2+) - rood (4+) - geel (6+) - blauw (8+)."
   />
 </template>
