@@ -141,16 +141,22 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-    // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    // https://sentry.nuxtjs.org/
+    '@nuxtjs/sentry',
     // https://github.com/schlunsen/nuxt-leaflet
     'nuxt-leaflet',
     // https://image.nuxtjs.org
     '@nuxt/image',
   ],
 
-  // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  publicRuntimeConfig: {
+    // Sentry module configuration: https://sentry.nuxtjs.org/guide/setup
+    sentry: {
+      config: {
+        dsn: process.env.SENTRY_DSN,
+      },
+    },
+  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
