@@ -16,7 +16,10 @@
           van een goede spulmer ...
         </p>
         <p>
-          <v-img max-width="750" src="/img/SPULMER-Kernwoorden.png"></v-img>
+          <v-img
+            max-width="750"
+            :src="$img('/img/SPULMER-Kernwoorden.png', { width: 750 })"
+          ></v-img>
         </p>
         <p>Wil je eens komen proberen of heb je graag een woordje uitleg ?</p>
         <p>Vul dan even je gegevens in en wij nemen contact met je op !</p>
