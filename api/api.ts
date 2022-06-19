@@ -81,7 +81,7 @@ apiMiddleware.all('/become-spulmer', (req, res) => {
       // Request failed
       let logEnvVars = envVars
       logEnvVars.pass = '*'.repeat(envVars.pass.length)
-      console.log('BecomeSpulmer: Sending email failed', e, logEnvVars)
+      console.log('BecomeSpulmer: Sending email failed', e, logEnvVars, msg)
       res.status(500).send('Failed to send email')
     })
 })
