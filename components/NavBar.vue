@@ -74,8 +74,8 @@
 import Vue from 'vue'
 import {
   mdiAccountCircle,
+  mdiCalendar,
   mdiCardAccountPhone,
-  mdiHandWash,
   mdiHelpCircle,
   mdiHome,
   mdiMenu,
@@ -113,6 +113,11 @@ export default Vue.extend({
           icon: mdiAccountCircle,
           name: 'Wie zijn we?',
           to: '/wie-zijn-we',
+        },
+        {
+          icon: mdiCalendar,
+          name: 'Agenda',
+          to: '/agenda',
         },
         {
           icon: mdiCardAccountPhone,
