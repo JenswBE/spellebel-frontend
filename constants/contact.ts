@@ -1,5 +1,20 @@
 export const CONTACT = {
-  hours: ['Woensdag: 14u30 tot 17u00', 'Zaterdag: 09u30 tot 12u00'],
+  hours: [
+    {
+      header: 'Elke week',
+      values: ['Woensdag: 14u30 tot 17u00', 'Zaterdag: 09u30 tot 12u00'],
+    },
+    {
+      header: 'Elke maand',
+      values: [
+        'Eerste dinsdag v/d maand: 18u00 tot 20u00<br/>(proefperiode van september 2022 tot februari 2023)',
+      ],
+    },
+    {
+      header: 'Uitzonderingen',
+      values: ['Open op dinsdag 8 november in plaats van dinsdag 1 november.'],
+    },
+  ],
 
   email: 'info@spellebel.be',
   phone_number: '+32 472 89 61 45',

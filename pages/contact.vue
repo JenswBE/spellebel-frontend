@@ -17,36 +17,44 @@
               vinden.
             </v-col>
           </v-row>
+        </v-container>
 
+        <v-container>
           <v-row align="center">
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="6" xl="4" offset-xl="1">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Openingsuren</h3>
                 </v-col>
-                <v-col cols="1">
+                <v-col cols="1" lg="2">
                   <v-icon :color="iconColor">{{ icons.clock }}</v-icon>
                 </v-col>
-                <v-col cols="11">
-                  <p
-                    v-for="hour in contact.hours"
-                    :key="hour"
-                    class="mb-0 ml-2"
-                  >
-                    {{ hour }}
-                  </p>
+                <v-col cols="11" lg="10">
+                  <template v-for="section in contact.hours">
+                    <p
+                      class="mb-0 ml-2 font-weight-bold"
+                      :key="section.header"
+                      v-text="section.header"
+                    ></p>
+                    <p
+                      class="mb-0 ml-2"
+                      v-for="value in section.values"
+                      :key="header + value"
+                      v-html="value"
+                    ></p>
+                  </template>
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Adres</h3>
                 </v-col>
-                <v-col cols="1">
+                <v-col cols="1" lg="2">
                   <v-icon :color="iconColor">{{ icons.map }}</v-icon>
                 </v-col>
-                <v-col cols="11">
+                <v-col cols="11" lg="10">
                   <p class="mb-0 ml-2">
                     {{ contact.address.street }}
                     {{ contact.address.number }}<br />
@@ -56,16 +64,16 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Bellen en mailen</h3>
                 </v-col>
-                <v-col cols="1" class="pb-0">
+                <v-col cols="1" lg="2" class="pb-0">
                   <v-icon :color="iconColor">{{ icons.phone }}</v-icon>
                 </v-col>
-                <v-col cols="11" class="pb-0">
-                  <p class="mb-0 ml-2">
+                <v-col cols="11" lg="10" class="pb-0">
+                  <p class="mb-0 ml-1">
                     <ExtLink
                       :to="`tel:${contact.phone_number}`"
                       :removeUnderline="true"
@@ -74,10 +82,10 @@
                     </ExtLink>
                   </p>
                 </v-col>
-                <v-col cols="1">
+                <v-col cols="1" lg="2">
                   <v-icon :color="iconColor">{{ icons.email }}</v-icon>
                 </v-col>
-                <v-col cols="11">
+                <v-col cols="11" lg="10">
                   <p class="mb-0 ml-2">
                     <ExtLink
                       :to="`mailto:${contact.email}`"
@@ -89,15 +97,15 @@
                 </v-col>
               </v-row>
             </v-col>
-            <v-col cols="12" lg="3">
+            <v-col cols="12" lg="2">
               <v-row align="center">
                 <v-col cols="12">
                   <h3>Overig</h3>
                 </v-col>
-                <v-col cols="1" class="pb-0">
+                <v-col cols="1" lg="2" class="pb-0">
                   <v-icon :color="iconColor">{{ icons.facebook }}</v-icon>
                 </v-col>
-                <v-col cols="11" class="pb-0">
+                <v-col cols="11" lg="10" class="pb-0">
                   <p class="mb-0 ml-2">
                     <ExtLink
                       :to="contact.social.facebook.url"
@@ -107,10 +115,10 @@
                     </ExtLink>
                   </p>
                 </v-col>
-                <v-col cols="1">
+                <v-col cols="1" lg="2">
                   <v-icon :color="iconColor">{{ icons.whatsapp }}</v-icon>
                 </v-col>
-                <v-col cols="11">
+                <v-col cols="11" lg="10">
                   <p class="mb-0 ml-2">
                     <ExtLink
                       :to="`https://wa.me/${whatsAppNumber}`"
