@@ -39,8 +39,9 @@ jobs:
           images_list = ",".join(images)
           print(f"Images: {images_list}")
           print(f"Container name: {container_name}")
-          print(f"::set-output name=images::{images_list}")
-          print(f"::set-output name=container_name::{container_name}")
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as output:
+            output.write(f"images={images_list}{os.linesep}")
+            output.write(f"container_name={container_name}{os.linesep}")
 
       - name: Set up QEMU
         uses: docker/setup-qemu-action@v2
