@@ -1,6 +1,6 @@
 # Based on https://github.com/nuxt/nuxt.js/blob/dev/examples/docker-build/Dockerfile
 
-ARG NODE_IMAGE=node:lts-alpine
+ARG NODE_IMAGE=node:16-alpine
 
 # Setup builder
 FROM ${NODE_IMAGE} as builder
@@ -19,6 +19,6 @@ RUN yarn cache clean --all
 # Build final image
 FROM ${NODE_IMAGE}
 WORKDIR /src
-COPY --from=builder /src  .
+COPY --from=builder /src .
 EXPOSE 8080
 CMD [ "yarn", "start", "--hostname", "0.0.0.0", "--port", "8080" ]

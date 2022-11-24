@@ -1,17 +1,23 @@
 version: 2
 updates:
-# Fetch and update latest `npm` packages
-- package-ecosystem: npm
-  directory: '/'
-  schedule:
-    interval: daily
-    time: '00:00'
-  open-pull-requests-limit: 10
-  reviewers:
-    - jens willemsens
-  assignees:
-    - jens willemsens
-  commit-message:
-    prefix: fix
-    prefix-development: chore
-    include: scope
+  # Fetch and update latest `npm` packages
+  - package-ecosystem: npm
+    directory: '/'
+    schedule:
+      interval: daily
+      time: '00:00'
+    open-pull-requests-limit: 10
+    reviewers:
+      - jens willemsens
+    assignees:
+      - jens willemsens
+    commit-message:
+      prefix: fix
+      prefix-development: chore
+      include: scope
+
+  # Maintain dependencies for GitHub Actions
+  - package-ecosystem: 'github-actions'
+    directory: '/'
+    schedule:
+      interval: 'daily'
