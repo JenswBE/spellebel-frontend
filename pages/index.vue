@@ -74,6 +74,11 @@
                 <br />We zullen dit zeker vieren en houden jullie hiervan via
                 onze website en sociale media op de hoogte !
               </p>
+              <p class="text-body-1">
+                <br /><v-img src="/img/nieuws/2022-12_Sint.jpeg" max-height="100">
+                <br />Ook in onze speel-o-theek waren er weer veel brave kindjes (en ouders) !
+                <br />De Sint liet weer heel wat nieuw speelgoed achter ...
+              </p>
             </v-col>
           </v-row>
         </v-container>
