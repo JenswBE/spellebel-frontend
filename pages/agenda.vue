@@ -14,20 +14,23 @@
           Dat vieren wij heel graag met al onze leden, want zonder jullie konden
           wij geen 20 jaar bestaan.
         </p>
-        <p>We starten ons feestjaar met een heus feestweekend:</p>
+        <p>We startten ons feestjaar met een heus feestweekend:</p>
         <p><span class="font-weight-bold">Zaterdag 1 oktober</span></p>
         <p>
-          Spellebel is zoals elke zaterdag open van 9u30 tot 12u. We steken het
-          dit keer in een feestelijk jasje. De rode loper, een drankje, balonnen
-          en versiering mag je zeker verwachten.
+          Spellebel was open van 9u30 tot 12u. We staken het dit keer in een feestelijk jasje : Rode loper, een drankje, balonnen en versiering.
         </p>
         <p class="pt-3">
           <span class="font-weight-bold">Zondag 2 oktober</span>
         </p>
         <p>
-          FAMILIEFEEST 13u30 - 18u in het Park Tempelhof (achter Spellebel)
-          Ontmoeting en Spel Volkspelen, toog, terras en ijsjes 16u extra
-          animatie
+          Het werd een heus FAMILIEFEEST in het Park Tempelhof (achter Spellebel) met ontmoeting - spel - volkspelen - toog - terras en ...
+        </p>
+        <p class="pt-3">
+          <span class="font-weight-bold">KINDERBINGO !!!</span>
+        </p>
+        <p>
+          Op zondag 5 maart zijn jullie welkom op Speelplein Don Bosco voor onze kinderbingo.
+          Tussendoor is er ook tijd en ruimte om te spelen en ravotten in de speeltuin, om iets te drinken, ...
         </p>
       </v-col>
       <v-col sm="10" offset-sm="1" md="4" offset-md="0" xl="3" offset-xl="1">
@@ -51,7 +54,7 @@ export default Vue.extend({
   methods: {
     flyerSrc(w: number, h: number): string {
       return this.$img(
-        '/img/flyer-feestweekend.jpg',
+        '/img/agenda/2023-03-05_Bingo.jpg',
         { quality: 80, fit: 'inside' },
         { width: w, height: h }
       )
