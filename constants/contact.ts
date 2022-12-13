@@ -12,7 +12,7 @@ export const CONTACT = {
     },
     {
       header: 'Uitzonderingen',
-      values: ['Open op dinsdag 8 november in plaats van dinsdag 1 november.'],
+      values: ['We zijn gesloten op zaterdag 24 en zaterdag 31 december 2022.'],
     },
   ],
 
