@@ -15,7 +15,7 @@
     <v-row>
       <v-col class="text-body-1">
         <p>
-          De uitleenperiode bedraagt maximaal 3 weken, gerekend vanaf de dag van
+          De uitleenperiode bedraagt maximaal 4 weken, gerekend vanaf de dag van
           lenen. Mocht het einde van de uitleenperiode vallen in een
           sluitingsperiode van de speelotheek (bijvoorbeeld vanwege vakantie)
           dan wordt de uiterste terugbrengdatum automatisch aangepast.
