@@ -1778,16 +1778,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/sentry@npm:^6.0.1":
-  version: 6.0.1
-  resolution: "@nuxtjs/sentry@npm:6.0.1"
+"@nuxtjs/sentry@npm:^6.0.3":
+  version: 6.0.3
+  resolution: "@nuxtjs/sentry@npm:6.0.3"
   dependencies:
     "@sentry/browser": ^6.19.7
     "@sentry/integrations": ^6.19.7
     "@sentry/node": ^6.19.7
     consola: ^2.15.3
     lodash.mergewith: ^4.6.2
-  checksum: b992a22362ab1ff64c6598045f2fa2d8ce45cada96297abf06d7c3236085814f06a6c8a4fbe168ee585443c154384b80c830ce7f6bcee51c4e48fcf71f0ecd7d
+  checksum: 09df5998c2a248b91924f6bcf7bc5df3d45b139e8c7aa4f306d8a02e04b471066a9a9bed6df97565db7955b9d42377d9a3f598c0f5d9aebb9e1fe784989f1a2b
   languageName: node
   linkType: hard
 
@@ -11543,7 +11543,7 @@ __metadata:
     "@nuxt/image": 0.6.2
     "@nuxt/types": ^2.15.8
     "@nuxt/typescript-build": ^2.1.0
-    "@nuxtjs/sentry": ^6.0.1
+    "@nuxtjs/sentry": ^6.0.3
     "@nuxtjs/vuetify": ^1.12.3
     "@types/nodemailer": ^6.4.6
     core-js: ^3.25.5
