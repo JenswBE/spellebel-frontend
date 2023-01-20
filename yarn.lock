@@ -5827,12 +5827,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fslightbox-vue@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "fslightbox-vue@npm:2.0.1"
+"fslightbox-vue@npm:^2.0.2":
+  version: 2.0.2
+  resolution: "fslightbox-vue@npm:2.0.2"
   peerDependencies:
     vue: ">=2.5.0"
-  checksum: 4cba04f02dc530c3e5ca6b3056710d3fc2a6dcbd307d0d06a2d3ae0fc7c3f8be931deb85c187201af4d17c1ae7566de2ee1530c6c721a2223ac6c45b1d36f9c9
+  checksum: 22d4f1e9b30184002ea7c367228cb883a45e2d12b7747ad81d334b2f7f229b8b383cb289498a05782b4a2cc9764428420f11e7369a2be46acaf06a42c4d0d8ba
   languageName: node
   linkType: hard
 
@@ -11549,7 +11549,7 @@ __metadata:
     core-js: ^3.25.5
     eslint-config-prettier: ^8.5.0
     express: ^4.18.2
-    fslightbox-vue: ^2.0.1
+    fslightbox-vue: ^2.0.2
     jpeg-autorotate: ^8.0.1
     nodemailer: ^6.8.0
     nuxt: ^2.15.8
