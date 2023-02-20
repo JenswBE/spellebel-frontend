@@ -11,7 +11,7 @@
   "dependencies": {
     "@mdi/js": "^7.0.96",
     "@nuxt/image": "0.6.2",
-    "@nuxtjs/sentry": "^6.0.1",
+    "@nuxtjs/sentry": "^7.0.4",
     "core-js": "^3.25.5",
     "express": "^4.18.2",
     "fslightbox-vue": "^2.0.1",
