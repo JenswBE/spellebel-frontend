@@ -4197,10 +4197,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"core-js@npm:^3.25.5":
-  version: 3.25.5
-  resolution: "core-js@npm:3.25.5"
-  checksum: 208b308c49bc022f90d4349d4c99802a73c9d55053976b3c529f10014c1e37845926defad8c519f2c7f71ea0acf18d2b323ab6aaee34dc85b4c4b3ced0623f3f
+"core-js@npm:^3.29.0":
+  version: 3.29.0
+  resolution: "core-js@npm:3.29.0"
+  checksum: 2bd69d783efcd2ef9197ce892a8b91d7b2fd86dddce805a3be0ff721013a2342eeab0f7d0b4b5548c1377b9846a8fb81485054efd39618b9d1a1fca04af81ccf
   languageName: node
   linkType: hard
 
@@ -11546,7 +11546,7 @@ __metadata:
     "@nuxtjs/sentry": ^6.0.1
     "@nuxtjs/vuetify": ^1.12.3
     "@types/nodemailer": ^6.4.6
-    core-js: ^3.25.5
+    core-js: ^3.29.0
     eslint-config-prettier: ^8.5.0
     express: ^4.18.2
     fslightbox-vue: ^2.0.1
