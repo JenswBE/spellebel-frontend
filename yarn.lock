@@ -11555,7 +11555,7 @@ __metadata:
     nuxt: ^2.15.8
     nuxt-leaflet: ^0.0.27
     prettier: ^2.7.1
-    vuetify: ^2.6.11
+    vuetify: ^3.1.13
   languageName: unknown
   linkType: soft
 
@@ -12806,12 +12806,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuetify@npm:^2.6.11":
-  version: 2.6.11
-  resolution: "vuetify@npm:2.6.11"
+"vuetify@npm:^3.1.13":
+  version: 3.1.13
+  resolution: "vuetify@npm:3.1.13"
   peerDependencies:
-    vue: ^2.6.4
-  checksum: b7d1b571dbe0f493e5cdf1dbb8b93b7667edef7f65094597d66f14741ff0f2ff233f0afbc94014bcb59abf600777155f4e2b4b70fb57ffd6b5365a0039d96e7b
+    vite-plugin-vuetify: ^1.0.0-alpha.12
+    vue: ^3.2.0
+    vue-i18n: ^9.0.0
+    webpack-plugin-vuetify: ^2.0.0-alpha.11
+  peerDependenciesMeta:
+    vite-plugin-vuetify:
+      optional: true
+    vue-i18n:
+      optional: true
+    webpack-plugin-vuetify:
+      optional: true
+  checksum: 8fd2aaca26028c2822a4a780b7ddd45912eb1c87b29cd65c51d511662163b279683af6c450b2de39e47edf8ed654664bccfbf11cf1be75ba56838f9686665549
   languageName: node
   linkType: hard
 
