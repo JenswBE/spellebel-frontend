@@ -18,7 +18,7 @@
     "nodemailer": "^6.8.0",
     "nuxt": "^2.15.8",
     "nuxt-leaflet": "^0.0.27",
-    "vuetify": "^2.6.11"
+    "vuetify": "^3.2.5"
   },
   "devDependencies": {
     "@nuxt/types": "^2.15.8",
