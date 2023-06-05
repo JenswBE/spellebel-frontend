@@ -14,7 +14,12 @@
     </v-row>
     <v-row>
       <p>
-        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie_1.jpg"></v-img><v-img max-width="400" src="/img/nieuws/2023-07_Vakantie_2.jpg"></v-img>
+        <v-col>
+            <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie_1.jpg"></v-img>
+          </v-col>
+        <v-col>
+          <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie_2.jpg"></v-img>
+        </v-col>
       </p>
     </v-row>
     <v-row>
