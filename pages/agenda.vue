@@ -43,10 +43,7 @@
           Tussendoor wass er ook tijd en ruimte om te spelen en ravotten in de speeltuin, om iets te drinken, ...
         </p>
       </v-col>
-      <v-col sm="10" offset-sm="1" md="4" offset-md="0" xl="3" offset-xl="1">
-        <! v-img :src="flyerSrc(500, 500)" :lazy-src="flyerSrc(50, 50)">
-      </v-col>
-    </v-row>
+      </v-row>
   </v-container>
 </template>
 
