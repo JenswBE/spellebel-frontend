@@ -12,8 +12,8 @@
         <span class="font-weight-bold">Vakantie 2023</span>
       </p>
       <p>
-        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie1.jpg"></v-img>
-        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie2.jpg"></v-img>
+        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie_1.jpg"></v-img>
+        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie_2.jpg"></v-img>
       </p>
     </v-row>
     <v-row>
