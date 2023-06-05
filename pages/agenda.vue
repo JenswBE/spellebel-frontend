@@ -24,8 +24,8 @@
     </v-row>
     <v-row class="py-10">
       <v-col>
-        <h1 class="text-h3">
-          <span class="spellebel-title"> Feestjaar 2022-2023 </span>
+        <h1 class="text-h4">
+          <span class="font-weight-bold"> 20 jaar Spellebel : Feestjaar 2022-2023 </span>
         </h1>
       </v-col>
     </v-row> <v-row>
