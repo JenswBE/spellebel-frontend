@@ -24,6 +24,34 @@
         </v-img>
       </v-col>
     </v-row>
+    <v-row class="blue lighten-1 py-8">
+      <v-col>
+        <v-container>
+          <v-row align="center">
+            <v-col cols="10" offset="1" sm="3" offset-sm="0" md="2">
+              <v-img src="/img/nieuwtje-small.jpg" class="rounded-circle" />
+            </v-col>
+            <v-col cols="12" sm="9">
+              <h2 class="text-h4 pb-2">Nieuwtje !</h2>
+              <p class="text-body-1">
+                <b>Bekijk onze vakantie-regeling bij <nuxt-link to="/agenda">"agenda"</nuxt-link>...</b>
+                <br><br>
+              </p>
+              <p class="text-body-1">
+                <br />Onze speel-o-theek bestaat in september 2022 al 20 jaar!
+                <br />We zullen dit zeker vieren en houden jullie hiervan via
+                onze website en sociale media op de hoogte !
+              </p>
+              <p class="text-body-1">
+                <br /><v-img src="/img/nieuws/2022-12_Sint.jpg" max-height="100px">
+                <br />Ook in onze speel-o-theek waren er weer veel brave kindjes (en ouders) !
+                <br />De Sint liet weer heel wat nieuw speelgoed achter ...
+              </p>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-col>
+    </v-row>
     <v-row class="py-10">
       <v-col>
         <v-container>
@@ -54,34 +82,6 @@
                 Iedereen is held, iedereen is kampioen.<br /><br />
                 Spelen is proberen, soms meerdere keren.<br /><br />
                 Spelen is een recht want spelen is leren.<br />
-              </p>
-            </v-col>
-          </v-row>
-        </v-container>
-      </v-col>
-    </v-row>
-    <v-row class="blue lighten-1 py-8">
-      <v-col>
-        <v-container>
-          <v-row align="center">
-            <v-col cols="10" offset="1" sm="3" offset-sm="0" md="2">
-              <v-img src="/img/nieuwtje-small.jpg" class="rounded-circle" />
-            </v-col>
-            <v-col cols="12" sm="9">
-              <h2 class="text-h4 pb-2">Nieuwtje !</h2>
-              <p class="text-body-1">
-                <b>Bekijk onze vakantie-regeling bij <nuxt-link to="/agenda">"agenda"</nuxt-link>...</b>
-                <br><br>
-              </p>
-              <p class="text-body-1">
-                <br />Onze speel-o-theek bestaat in september 2022 al 20 jaar!
-                <br />We zullen dit zeker vieren en houden jullie hiervan via
-                onze website en sociale media op de hoogte !
-              </p>
-              <p class="text-body-1">
-                <br /><v-img src="/img/nieuws/2022-12_Sint.jpg" max-height="100px">
-                <br />Ook in onze speel-o-theek waren er weer veel brave kindjes (en ouders) !
-                <br />De Sint liet weer heel wat nieuw speelgoed achter ...
               </p>
             </v-col>
           </v-row>
