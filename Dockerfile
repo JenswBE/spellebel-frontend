@@ -3,7 +3,7 @@
 ARG NODE_IMAGE=node:16-alpine
 
 # Setup builder
-FROM ${NODE_IMAGE} as builder
+FROM --platform=${BUILDPLATFORM} ${NODE_IMAGE} as builder
 WORKDIR /src
 COPY . .
 
