@@ -8,10 +8,19 @@
       </v-col>
     </v-row>
     <v-row>
+      <p class="text-h2">
+        <span class="font-weight-bold">Vakantie 2023</span>
+      </p>
+      <p>
+        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie1.jpg"></v-img>
+        <v-img max-width="400" src="/img/nieuws/2023-07_Vakantie2.jpg"></v-img>
+      </p>
+    </v-row>
+    <v-row>
       <v-col sm="10" offset-sm="1" md="8" offset-md="0" xl="6">
-        <p>Vanaf september bestaan wij 20 jaar!</p>
+        <p>In september 2023 bestonden wij 20 jaar!</p>
         <p>
-          Dat vieren wij heel graag met al onze leden, want zonder jullie konden
+          Dat wilden we graag vieren met al onze leden, want zonder jullie konden
           wij geen 20 jaar bestaan.
         </p>
         <p>We startten ons feestjaar met een heus feestweekend:</p>
@@ -29,8 +38,8 @@
           <span class="font-weight-bold">KINDERBINGO !!!</span>
         </p>
         <p>
-          Op zondag 5 maart zijn jullie welkom op Speelplein Don Bosco voor onze kinderbingo.
-          Tussendoor is er ook tijd en ruimte om te spelen en ravotten in de speeltuin, om iets te drinken, ...
+          Op zondag 5 maart waren jullie welkom op Speelplein Don Bosco voor onze kinderbingo.
+          Tussendoor wass er ook tijd en ruimte om te spelen en ravotten in de speeltuin, om iets te drinken, ...
         </p>
       </v-col>
       <v-col sm="10" offset-sm="1" md="4" offset-md="0" xl="3" offset-xl="1">
