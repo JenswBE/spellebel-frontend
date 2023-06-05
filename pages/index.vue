@@ -70,6 +70,10 @@
             <v-col cols="12" sm="9">
               <h2 class="text-h4 pb-2">Nieuwtje !</h2>
               <p class="text-body-1">
+                <b>Bekijk onze vakantie-regeling bij <nuxt-link to="/agenda">"agenda"</nuxt-link>...</b>
+                <br><br>
+              </p>
+              <p class="text-body-1">
                 <br />Onze speel-o-theek bestaat in september 2022 al 20 jaar!
                 <br />We zullen dit zeker vieren en houden jullie hiervan via
                 onze website en sociale media op de hoogte !
