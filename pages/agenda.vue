@@ -8,7 +8,7 @@
       </v-col>
     </v-row>
     <v-row>
-      <p class="text-h2">
+      <p class="text-h4">
         <span class="font-weight-bold">Vakantie 2023</span>
       </p>
       <p>
