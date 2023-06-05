@@ -22,7 +22,13 @@
         </v-col>
       </p>
     </v-row>
-    <v-row>
+    <v-row class="py-10">
+      <v-col>
+        <h1 class="text-h3">
+          <span class="spellebel-title"> Feestjaar 2022-2023 </span>
+        </h1>
+      </v-col>
+    </v-row> <v-row>
       <v-col sm="10" offset-sm="1" md="8" offset-md="0" xl="6">
         <p>In september 2023 bestonden wij 20 jaar!</p>
         <p>
