@@ -43,7 +43,7 @@
         </p>
       </v-col>
       <v-col sm="10" offset-sm="1" md="4" offset-md="0" xl="3" offset-xl="1">
-        <v-img :src="flyerSrc(500, 500)" :lazy-src="flyerSrc(50, 50)"></v-img>
+        <! v-img :src="flyerSrc(500, 500)" :lazy-src="flyerSrc(50, 50)">
       </v-col>
     </v-row>
   </v-container>
