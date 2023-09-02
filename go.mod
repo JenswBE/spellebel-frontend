@@ -1,0 +1,19 @@
+module github.com/JenswBE/spellebel-frontend
+
+go 1.21
+
+require (
+	github.com/JenswBE/go-pipeline v0.0.0-20230902132841-06ceddd6287e
+	github.com/rs/zerolog v1.30.0
+	github.com/samber/lo v1.38.1
+)
+
+require (
+	github.com/disintegration/imaging v1.6.2 // indirect
+	github.com/mattn/go-colorable v0.1.13 // indirect
+	github.com/mattn/go-isatty v0.0.19 // indirect
+	golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 // indirect
+	golang.org/x/image v0.11.0 // indirect
+	golang.org/x/sys v0.8.0 // indirect
+	gopkg.in/yaml.v3 v3.0.1 // indirect
+)

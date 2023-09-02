@@ -1,0 +1,23 @@
+Email: info@spellebel.be
+PhoneNumber: "+32 472 89 61 45"
+Address:
+  Street: Bisschopslaan
+  Number: "1"
+  PostalCode: "2340"
+  City: "Beerse"
+Socials:
+  Facebook:
+    Name: Spellebel
+    Link: https://www.facebook.com/Speel-o-theek-SPELLEBEL-78931002195
+  WhatsApp:
+    Name: "+32 472 89 61 45"
+    Link: https://wa.me/32472896145
+Hours:
+  - Header: Elke week
+    Details:
+      - "Woensdag: 14u30 tot 17u00"
+      - "Zaterdag: 09u30 tot 12u00"
+  - Header: Elke maand
+    Details:
+      - "Eerste dinsdag v/d maand: 18u00 tot 20u00"
+      - "(proefperiode van september 2022 tot februari 2023)"

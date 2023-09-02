@@ -1,0 +1,85 @@
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
+
+<!-- Title -->
+{{ define "title" }}Hoe werkt het?{{ end }}
+
+<!-- Body content -->
+{{ define "base_content" }}
+<div class="container pt-3 pb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1><span class="spellebel-title">Uitlenen</span></h1>
+      <h2 class="mt-5">Abonnement</h2>
+      <p>
+        De uitleenperiode bedraagt maximaal 4 weken, gerekend vanaf de dag van
+        lenen. Mocht het einde van de uitleenperiode vallen in een
+        sluitingsperiode van de speelotheek (bijvoorbeeld vanwege vakantie)
+        dan wordt de uiterste terugbrengdatum automatisch aangepast.
+      </p>
+      <p>
+        Bij elke uitlening krijg je een overzicht van wat je meeneemt.
+        <br />Hierop staat ook de inleverdatum.
+      </p>
+      <p>Bij ons speelgoed zit ook een overzicht met wat er in zit.</p>
+      <p>
+        Wanneer je het speelgoed bij ons inlevert zullen wij dit natellen. Zo
+        kunnen wij steeds garant staan voor volledig speelgoed dat opnieuw
+        uitgeleend kan worden.
+      </p>
+      <p>
+        Bij te laat inleveren of missende onderdelen, wordt een bijdrage
+        gevraagd.
+      </p>
+      <p class="mt-5">Wij werken met 3 types abonnement:</p>
+      <table class="table">
+        <thead>
+          <tr>
+            <th></th>
+            <th class="text-left">Speelgoed per uitlening</th>
+            <th class="text-left">Prijs per jaar</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Gewoon abonnement</td>
+            <td>3 stuks</td>
+            <td>€15</td>
+          </tr>
+          <tr>
+            <td>XL-abonnement</td>
+            <td>6 stuks</td>
+            <td>€25</td>
+          </tr>
+          <tr>
+            <td>Abonnement D-Kaart *</td>
+            <td>3 stuks</td>
+            <td>€5</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        * meer info op de site van
+        <ExtLink to="http://www.de-watertoren.be/">
+          Watertoren - Beerse
+        </ExtLink>
+      </p>
+      <h2 class="mt-5">Uitlening verlengen</h2>
+      <p>
+        De uitleenperiode kan 1 keer verlengd worden, onder de voorwaarde dat
+        het betreffende spelmateriaal niet gereserveerd is door een andere
+        ontlener.
+      </p>
+      <p>
+        Verlengen kan tot sluitingstijd op je inleverdag. Dit kan telefonisch
+        of via sms / Whatsapp.
+        <br />Vermeld altijd zeker je naam en lidnummer !
+      </p>
+      <p>
+        Verlengen via mail of facebook/messenger is momenteel nog niet
+        mogelijk.
+      </p>
+    </div>
+  </div>
+</div>
+{{ end }}

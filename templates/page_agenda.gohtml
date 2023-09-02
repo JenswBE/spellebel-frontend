@@ -1,0 +1,58 @@
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
+
+<!-- Title -->
+{{ define "title" }}Agenda{{ end }}
+
+<!-- Body content -->
+{{ define "base_content" }}
+<div class="container pt-3 pb-5">
+  <div class="row g-4">
+    <div class="col-12">
+        <h1 class="pb-3"><span class="spellebel-title">Agenda</span></h1>
+        <p class="mb-0">
+          Naar goede gewoonte organiseren we ook dit jaar onze jaarlijkse speelgoedbeurs.
+        </p>
+        <p class="mb-0">
+          Deze keer gaat ze door op zondagvoormiddag 8 oktober 2023, in GC 't Heilaar. Dat is in de Heilaartstraat 35, 2340 Beerse.
+        </p>
+        <p>
+          Openingsuren: van 9u30 tot 12u.
+        </p>
+        <p>
+          Inkom kopers: gratis
+        </p>
+        <p class="mb-0">
+          Verkopers: €5 per tafel.
+        </p>
+        <p>
+          Inschrijven als verkoper kan via
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqcIQwR-CSyw_fqyrXlAEmqXEptAlZU-t2so6NYFMeSEfEfQ/viewform">
+            dit inschrijvingsformulier
+          </a>.
+        </p>
+        <p class="mb-0">
+          *Er zijn slechts 50 tafels beschikbaar, dus wees er tijdig bij. Inschrijven kan tot 2 oktober.
+        </p>
+        <p>
+          Je inschrijving zal officieel bevestigd worden na ontvangst van betaling.
+        </p>
+        <p class="mb-0">
+          Wij kijken alvast uit naar deze nieuwe editie!
+        </p>
+        <p class="mb-0">
+          Wie weet zien we je daar.
+        </p>
+        <p>
+          Speelse Spellebel-groetjes
+        </p>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="/assets/img/agenda/flyer-koper.png" class="img-fluid" style="max-height: 700px;"/>
+    </div>
+    <div class="col-12 col-md-6">
+      <img src="/assets/img/agenda/flyer-verkoper.png" class="img-fluid" style="max-height: 700px;"/>
+    </div>
+  </div>
+</div>
+{{ end }}

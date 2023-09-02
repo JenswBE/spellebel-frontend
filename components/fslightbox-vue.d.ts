@@ -1,1 +1,0 @@
-declare module 'fslightbox-vue'

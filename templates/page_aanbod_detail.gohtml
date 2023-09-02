@@ -1,0 +1,63 @@
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
+
+<!-- Title -->
+{{ define "title" }}{{ .RepeatedValue.Name }}{{ end }}
+
+<!-- Body content -->
+{{ define "base_content" }}
+<div class="container pt-3 pb-5">
+  <div class="row">
+    <div class="col-12 mb-3">
+        <h1><span class="spellebel-title">{{ .RepeatedValue.Name }}</span></h1>
+    </div>
+    <div class="col-12 mb-3">
+      <a class="btn btn-text" href="/aanbod" role="button">
+        <i class="bi bi-arrow-left"></i>
+        TERUG NAAR OVERZICHT
+      </a>
+    </div>
+    <div class="col-12">
+        {{ with .RepeatedValue.Description }}
+        <p>{{ rawHTML . }}</p>
+        {{ end }}
+    </div>
+    <div class="col-12">
+      <p>
+        Dit zijn maar enkele voorbeelden van ons aanbod. Kom zeker eens langs
+        om alles te ontdekken!
+      </p>
+      <p>
+        Klik op de voorbeelden om de volledige foto te zien.
+      </p>
+    </div>
+  </div>
+  <div class="row g-4">
+    {{ $imgPath := pathJoin .Data.AanbodImgPath .RepeatedKey }}
+    {{ range readDir ( pathJoin "static" $imgPath ) }}
+      {{ if .IsDir }}
+        {{ continue }}
+      {{ end }}
+      <div class="col-6 col-sm-4 col-md-3">
+        <a
+          href="{{ pathJoin $imgPath .Name }}"
+          data-toggle="lightbox"
+          data-gallery="spellebel-gallery"
+        >
+          <img src="{{ pathJoin $imgPath "thumbnail" .Name }}" class="img-fluid">
+        </a>
+      </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+<!-- Body end -->
+{{ define "base_body_end" }}
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bs5-lightbox/1.8.3/index.bundle.min.js"
+    integrity="sha512-wOwwlvSeaATXscQHfDsAUnt3cBBvrKkyf7lI+k/88X6x/fxtc678fTdKRNcxZxtRdpzYFiIqqW5uIRUiPlZJlw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+{{ end }}
