@@ -1,0 +1,15 @@
+beweging:
+  Name: Beweging (B)
+constructie:
+  Name: Constructie (C)
+fantasie:
+  Name: Fantasie (F)
+gezelschapspellen:
+  Name: Gezelschapspellen (G)
+  Description: >
+    Onze gezelschapspelen zijn opgedeeld in 4 leeftijdsgroepen met elk een eigen kleur.<br/>
+    Deze kan je telkens terug vinden op de doos: groen (2+) - rood (4+) - geel (6+) - blauw (8+).
+puzzels:
+  Name: Puzzels (P)
+zintuiglijk:
+  Name: Zintuiglijk (Z)

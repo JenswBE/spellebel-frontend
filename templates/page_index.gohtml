@@ -1,0 +1,121 @@
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
+
+<!-- Title -->
+{{ define "title" }}Start{{ end }}
+
+<!-- Body content -->
+{{ define "base_content" }}
+<div class="row g-0 mx-0">
+  <div class="col-12">
+    <div class="card border-0" style="max-height: 95vh;">
+      <img
+        src="/assets/img/raam.jpg"
+        class="card-img rounded-0"
+        aria-hidden="true"
+        style="height: 95vh; max-height: 95vh; object-fit: cover;"
+      />
+      <div class="card-img-overlay d-flex align-items-center justify-content-center">
+        <div
+          class="rounded-circle p-5 text-center"
+          style="background-color: #cddc39;"
+        >
+          <p class="fs-3 text-center">
+            <span class="text-dark">Welkom bij</span>
+          </p>
+          <img
+            src="/assets/img/logo-small.png"
+            alt="Spellebel"
+            class="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="nieuwtje" class="row g-0 mx-0">
+  <div class="col-12">
+    <div class="container">
+      <div class="row align-items-center py-5">
+        <div class="d-none d-lg-block col-lg-4">
+          <img src="/assets/img/nieuwtje-small.jpg" class="img-fluid rounded-circle" style="max-height: 200px;" />
+        </div>
+        <div class="col-12 col-lg-8">
+          <h2 class="fs-2 pb-2">Nieuwtje !</h2>
+          <p class="fw-bold">
+            Bekijk onze vakantie-regeling bij
+            <a href="/agenda">"agenda"</a>...
+          </p>
+          <p>
+            Vanaf 1 september zijn we opnieuw elke zaterdag én woensdag geopend.
+          </p>
+          <img src="assets/img/nieuws/speelgoedbeurs.png" class="img-fluid" style="max-height: 300px;"/>
+          <p class="pt-3">Check <a href="/agenda">onze agenda</a> om jouw verkoopstafel te reserveren.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12 col-lg-11 offset-lg-1">
+      <h2 class="mt-5">Jouw bibliotheek voor speelgoed</h2>
+      <p>
+        Spellebel is een speel-o-theek. Bij ons kan je speelgoed
+        uitlenen, net zoals een bibliotheek dat met boeken doet.
+        <br />Wij streven er naar om een verscheiden aanbod aan te
+        bieden. Zo kan je er heel wat “ander” speelgoed vinden dan dat
+        je thuis al in de kast hebt liggen of wil kopen.
+      </p>
+      <p>
+        Spelen is voor iedereen, klein of groot.<br />
+        Soms ben je leeuw of danser of piloot.<br /><br />
+        Spelen is winnen en soms ook verliezen.<br />
+        Soms beslist de andere, soms moet jij kiezen.<br /><br />
+        Spelen is denken en tellen van 2, 4, 6, 8.<br />
+        Jij gaat verstoppen en ik sta op wacht.<br /><br />
+        Spelen is hoelahoepen of racen, alleen of met 2.<br />
+        Spelen is zeggen: &apos;Doe jij ook mee?&apos;<br /><br />
+        Spelen is waarheid, durven of doen.<br />
+        Iedereen is held, iedereen is kampioen.<br /><br />
+        Spelen is proberen, soms meerdere keren.<br /><br />
+        Spelen is een recht want spelen is leren.<br />
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12 col-lg-9 offset-lg-3">
+      <h2 class="pt-5 pb-3">Spellebel in cijfers</h2>
+    </div>
+  </div>
+  <div class="row pb-5">
+    <div class="col-12 col-sm-4 col-lg-2 offset-lg-3">
+      <p class="text-center">
+        <i class="bi bi-people-fill" style="font-size: 2rem; color: #42a5f5;"></i>
+        200+
+      </p>
+      <p class="text-center fw-bold">LEDEN</p>
+    </div>
+    <div class="col-12 col-sm-4 col-lg-2">
+      <p class="text-center">
+        <i class="bi bi-puzzle-fill" style="font-size: 2rem; color: #42a5f5;"></i>
+        1000+
+      </p>
+      <p class="text-center fw-bold">
+        STUKKEN SPEELGOED
+      </p>
+    </div>
+    <div class="col-12 col-sm-4 col-lg-2">
+      <p class="text-center">
+        <i class="bi bi-people-fill" style="font-size: 2rem; color: #42a5f5;"></i>
+        40+
+      </p>
+      <p class="text-center fw-bold">
+        VRIJWILLIGERS
+      </p>
+    </div>
+  </div>
+</div>
+{{ end }}

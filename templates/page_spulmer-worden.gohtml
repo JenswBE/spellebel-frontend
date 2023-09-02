@@ -1,0 +1,64 @@
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
+
+<!-- Title -->
+{{ define "title" }}Spulmer worden{{ end }}
+
+<!-- Body content -->
+{{ define "base_content" }}
+<div class="container pt-3 pb-5">
+  <div class="row">
+    <div class="col-12">
+      <h1>
+        <span class="spellebel-title">
+          Wil je ook meewerken aan onze speel-o-theek ?
+        </span>
+      </h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <p>
+        Onze spulmers zeggen zelf dat dit de belangrijkste eigenschappen zijn
+        van een goede spulmer ...
+      </p>
+      <p>
+        <img
+          class="img-fluid rounded p-3"
+          src="/assets/img/SPULMER-Kernwoorden.png"
+          width="750"
+          style="background-color: white;"
+        />
+      </p>
+      <p>Wil je eens komen proberen of heb je graag een woordje uitleg ?</p>
+      <p>Vul dan even je gegevens in en wij nemen contact met je op !</p>
+      <iframe
+        data-tally-src="https://tally.so/embed/nrag52?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="359"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Vrijwilliger worden"
+      ></iframe>
+      <script>
+        var d = document;
+        var w = "https://tally.so/widgets/embed.js";
+        var v = function () {
+            "undefined" != typeof Tally
+                ? Tally.loadEmbeds()
+                : d.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function (e) {
+                      e.src = e.dataset.tallySrc;
+                  });
+        };
+        if ("undefined" != typeof Tally) v();
+        else if (d.querySelector('script[src="' + w + '"]') == null) {
+            var s = d.createElement("script");
+            (s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s);
+        }
+      </script>
+    </div>
+  </div>
+</div>
+{{ end }}
