@@ -70,11 +70,11 @@ func main() {
 			Link  string
 		}{
 			{Title: "START", Link: "/"},
-			{Title: "HOE WERKT HET?", Link: "/hoe-werkt-het"},
-			{Title: "AANBOD", Link: "/aanbod"},
-			{Title: "WIE ZIJN WIJ?", Link: "/wie-zijn-wij"},
-			{Title: "AGENDA", Link: "/agenda"},
-			{Title: "CONTACT", Link: "/contact"},
+			{Title: "HOE WERKT HET?", Link: "/hoe-werkt-het/"},
+			{Title: "AANBOD", Link: "/aanbod/"},
+			{Title: "WIE ZIJN WIJ?", Link: "/wie-zijn-wij/"},
+			{Title: "AGENDA", Link: "/agenda/"},
+			{Title: "CONTACT", Link: "/contact/"},
 		}).
 		LoadRenderSingle("page_404.gohtml", "404").
 		SetData("CurrentNavLink", "START").
