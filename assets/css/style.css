@@ -1,0 +1,53 @@
+#nieuwtje {
+    background-color: #42a5f5;
+}
+
+@media (prefers-color-scheme: dark) {
+    #nieuwtje {
+        background-color: #0d5086;
+    }
+}
+
+a.without_underline {
+    text-decoration: none !important;
+}
+
+.spellebel-title {
+    /* lime */
+    border-bottom: 5px solid #cddc39;
+}
+
+.btn-text:hover {
+    color: #cddc39 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    #logo-light {
+        display: none;
+    }
+
+    #logo-dark {
+        display: inline !important;
+    }
+}
+
+footer {
+    border-top: 1px solid #e3e3e3 !important;
+}
+
+@media (prefers-color-scheme: dark) {
+    footer {
+        border-top: 1px solid #424242 !important;
+    }
+}
+
+/* Aanbod */
+.sb-aanbod-cat-link .sb-aanbod-cat-label {
+    /* lime */
+    background-color: #cddc39 !important;
+}
+
+.sb-aanbod-cat-link:hover .sb-aanbod-cat-label {
+    /* lime lighten-1 */
+    background-color: #d4e157 !important;
+}
