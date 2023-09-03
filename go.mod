@@ -3,11 +3,11 @@ module github.com/JenswBE/spellebel-frontend
 go 1.21
 
 require (
-	github.com/JenswBE/go-pipeline v0.0.0-20230902132841-06ceddd6287e
+	github.com/JenswBE/go-pipeline v1.0.0
 	github.com/disintegration/imaging v1.6.2
 	github.com/rs/zerolog v1.30.0
 	github.com/samber/lo v1.38.1
-	golang.org/x/sync v0.1.0
+	golang.org/x/sync v0.3.0
 )
 
 require (

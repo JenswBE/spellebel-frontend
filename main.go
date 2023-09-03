@@ -72,8 +72,8 @@ func main() {
 		SetData("OutputPath", outputPath).
 		SetData("AanbodImgPath", aanbodImgPath).
 		SetDataYAML("Aanbod", "Aanbod.yml").
-		TransformData(aanbodToSlice).
-		TransformData(processAanbodImages(*prod)).
+		MustTransformData(aanbodToSlice).
+		MustTransformData(processAanbodImages(*prod)).
 		SetDataYAML("Contact", "Contact.yml").
 		SetData("NavLinks", []struct {
 			Title string
