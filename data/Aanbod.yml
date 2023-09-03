@@ -1,3 +1,17 @@
+# Elk item in onderstaande lijst:
+# - Komt automatisch in het overzicht van het aanbod op https://spellebel.be/aanbod/
+# - Wordt automatisch een pagina op https://spellebel.be/aanbod/<item>
+#
+# Vereisten
+# - Een omslagfoto in "static/assets/img/aanbod" met naam "item.jpg". Bv:
+#   - static/assets/img/aanbod/beweging.jpg
+# - Een of meerdere product foto's in "static/assets/img/aanbod/item/" met naam "item-x.jpg". Bv:
+#   - static/assets/img/aanbod/beweging/beweging-1.jpg
+#   - static/assets/img/aanbod/beweging/beweging-2.jpg
+#
+# Velden
+# - Name: Naam van de categorie
+# - Description: Optionele HTML beschrijving van de categorie. Getoond op detail pagina.
 beweging:
   Name: Beweging (B)
 constructie:
