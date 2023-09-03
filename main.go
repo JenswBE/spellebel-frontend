@@ -10,6 +10,7 @@ import (
 	"os"
 	"os/exec"
 	"path"
+	"runtime"
 	"slices"
 	"time"
 
@@ -18,6 +19,7 @@ import (
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/samber/lo"
+	"golang.org/x/sync/errgroup"
 )
 
 const (
@@ -37,8 +39,13 @@ func main() {
 		logLevel = zerolog.DebugLevel
 	}
 	zerolog.SetGlobalLevel(logLevel)
+	zerolog.DurationFieldUnit = time.Second
 	consoleWriter := zerolog.ConsoleWriter{Out: os.Stdout, TimeFormat: time.RFC3339}
 	log.Logger = log.Output(consoleWriter)
+
+	// Start generation
+	start := time.Now()
+	log.Info().Msg("Starting to generate website ...")
 
 	// Copy static content
 	cmd := exec.Command("cp", "-R", "static/.", "output/")
@@ -76,7 +83,7 @@ func main() {
 			{Title: "AGENDA", Link: "/agenda/"},
 			{Title: "CONTACT", Link: "/contact/"},
 		}).
-		LoadRenderSingle("page_404.gohtml", "404").
+		LoadRenderSingle("page_404.gohtml", "404.html").
 		SetData("CurrentNavLink", "START").
 		LoadRenderSingle("page_index.gohtml", "index.html").
 		SetData("CurrentNavLink", "HOE WERKT HET?").
@@ -93,7 +100,7 @@ func main() {
 		SetData("CurrentNavLink", "CONTACT").
 		LoadRenderSingle("page_contact.gohtml", "contact/index.html").
 		Must()
-	log.Info().Msg("Website successfully generated")
+	log.Info().Dur("duration_in_seconds", time.Since(start)).Msg("Website successfully generated")
 }
 
 func aanbodToSlice(data map[string]any) (map[string]any, error) {
@@ -111,10 +118,12 @@ func processAanbodImages(isProd bool) func(data map[string]any) (map[string]any,
 	return func(data map[string]any) (map[string]any, error) {
 		// Only resize on Prod builds
 		if !isProd {
-			log.Info().Msg("Aanbod image optimization disabled for Dev builds. Enable with --prod flag.")
+			log.Warn().Msg("Aanbod image generation disabled for Dev builds. Enable with --prod flag.")
 			return data, nil
 		}
 
+		start := time.Now()
+		log.Info().Msg("Starting to process images. This might take a while ...")
 		typed, ok := data["Aanbod"].(map[string]any)
 		if !ok {
 			return nil, errors.New("data has no key Aanbod with type map[string]any")
@@ -125,25 +134,36 @@ func processAanbodImages(isProd bool) func(data map[string]any) (map[string]any,
 			if err := os.MkdirAll(thumbnailDirPath, os.ModePerm); err != nil {
 				return nil, fmt.Errorf("failed to create directory %v: %w", thumbnailDirPath, err)
 			}
+			g := new(errgroup.Group)
+			g.SetLimit(runtime.NumCPU())
 			for _, file := range readDir(srcDirPath) {
 				// Open source file
-				log.Debug().Str("img_path", srcDirPath).Msg("Opening image for rotating and resizing")
-				srcImgPath := path.Join(srcDirPath, file.Name())
-				img, err := imaging.Open(srcImgPath, imaging.AutoOrientation(true))
-				if err != nil {
-					return nil, fmt.Errorf("failed to open image %v: %w", srcImgPath, err)
-				}
+				g.Go(func(file fs.DirEntry) func() error {
+					return func() error {
+						log.Debug().Str("img_path", srcDirPath).Msg("Opening image for rotating and resizing")
+						srcImgPath := path.Join(srcDirPath, file.Name())
+						img, err := imaging.Open(srcImgPath, imaging.AutoOrientation(true))
+						if err != nil {
+							return fmt.Errorf("failed to open image %v: %w", srcImgPath, err)
+						}
 
-				// Resize for thumbnail
-				thumbnailPath := path.Join(thumbnailDirPath, file.Name())
-				log.Debug().Str("thumbnail_path", thumbnailPath).Msg("Generating and writing thumbnail")
-				thumbnail := imaging.Thumbnail(img, 300, 250, imaging.Lanczos)
-				err = imaging.Save(thumbnail, thumbnailPath, imaging.JPEGQuality(80))
-				if err != nil {
-					return nil, fmt.Errorf("failed to write thumbnail to %v: %w", thumbnailPath, err)
-				}
+						// Resize for thumbnail
+						thumbnailPath := path.Join(thumbnailDirPath, file.Name())
+						log.Debug().Str("thumbnail_path", thumbnailPath).Msg("Generating and writing thumbnail")
+						thumbnail := imaging.Thumbnail(img, 300, 250, imaging.Lanczos)
+						err = imaging.Save(thumbnail, thumbnailPath, imaging.JPEGQuality(80))
+						if err != nil {
+							return fmt.Errorf("failed to write thumbnail to %v: %w", thumbnailPath, err)
+						}
+						return nil
+					}
+				}(file))
+			}
+			if err := g.Wait(); err != nil {
+				return nil, err
 			}
 		}
+		log.Info().Dur("duration_in_seconds", time.Since(start)).Msg("Processing images successful")
 		return data, nil
 	}
 }

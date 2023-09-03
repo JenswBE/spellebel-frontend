@@ -4,12 +4,13 @@ go 1.21
 
 require (
 	github.com/JenswBE/go-pipeline v0.0.0-20230902132841-06ceddd6287e
+	github.com/disintegration/imaging v1.6.2
 	github.com/rs/zerolog v1.30.0
 	github.com/samber/lo v1.38.1
+	golang.org/x/sync v0.1.0
 )
 
 require (
-	github.com/disintegration/imaging v1.6.2 // indirect
 	github.com/mattn/go-colorable v0.1.13 // indirect
 	github.com/mattn/go-isatty v0.0.19 // indirect
 	golang.org/x/exp v0.0.0-20220303212507-bbda1eaf7a17 // indirect
