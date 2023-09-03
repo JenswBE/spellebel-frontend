@@ -194,21 +194,22 @@ func resizeFit(img image.Image, maxWidth, maxHeight int, filter imaging.Resample
 	bounds := img.Bounds()
 	currWidth := bounds.Dx()
 	currHeight := bounds.Dy()
+
+	// Image is in landscape
 	if currWidth > currHeight {
-		// Image is in landscape
 		if currWidth < maxWidth {
 			// Image is already smaller than max width
 			return img
 		}
 		return imaging.Resize(img, maxWidth, 0, filter)
-	} else {
-		// Image is in portret or square
-		if currHeight < maxHeight {
-			// Image is already smaller than max height
-			return img
-		}
-		return imaging.Resize(img, 0, maxHeight, filter)
 	}
+
+	// Image is in portret or square
+	if currHeight < maxHeight {
+		// Image is already smaller than max height
+		return img
+	}
+	return imaging.Resize(img, 0, maxHeight, filter)
 }
 
 func rawHTML(input string) template.HTML {
