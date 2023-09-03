@@ -6,6 +6,7 @@ import (
 	"flag"
 	"fmt"
 	"html/template"
+	"image"
 	"io/fs"
 	"os"
 	"os/exec"
@@ -26,6 +27,8 @@ const (
 	aanbodImgPath = "/assets/img/aanbod"
 	outputPath    = "output"
 )
+
+var imgResizeFilter imaging.ResampleFilter = imaging.Lanczos
 
 func main() {
 	// Parse flags
@@ -66,7 +69,7 @@ func main() {
 		WithDataDir("data").
 		WithOutputDir(outputPath).
 		LoadGlob("layout_*.gohtml").
-		SetData("IsProd", *prod).
+		SetData("OutputPath", outputPath).
 		SetData("AanbodImgPath", aanbodImgPath).
 		SetDataYAML("Aanbod", "Aanbod.yml").
 		TransformData(aanbodToSlice).
@@ -130,9 +133,14 @@ func processAanbodImages(isProd bool) func(data map[string]any) (map[string]any,
 		}
 		for k := range typed {
 			srcDirPath := path.Join("static", aanbodImgPath, k)
-			thumbnailDirPath := path.Join(outputPath, aanbodImgPath, k, "thumbnail")
+			outputBasePath := path.Join(outputPath, aanbodImgPath, k)
+			thumbnailDirPath := path.Join(outputBasePath, "thumbnail")
 			if err := os.MkdirAll(thumbnailDirPath, os.ModePerm); err != nil {
 				return nil, fmt.Errorf("failed to create directory %v: %w", thumbnailDirPath, err)
+			}
+			lightboxDirPath := path.Join(outputBasePath, "lightbox")
+			if err := os.MkdirAll(lightboxDirPath, os.ModePerm); err != nil {
+				return nil, fmt.Errorf("failed to create directory %v: %w", lightboxDirPath, err)
 			}
 			g := new(errgroup.Group)
 			g.SetLimit(runtime.NumCPU())
@@ -149,11 +157,25 @@ func processAanbodImages(isProd bool) func(data map[string]any) (map[string]any,
 
 						// Resize for thumbnail
 						thumbnailPath := path.Join(thumbnailDirPath, file.Name())
-						log.Debug().Str("thumbnail_path", thumbnailPath).Msg("Generating and writing thumbnail")
-						thumbnail := imaging.Thumbnail(img, 300, 250, imaging.Lanczos)
+						log.Debug().Str("thumbnail_path", thumbnailPath).Msg("Generating and writing thumbnail image")
+						thumbnail := imaging.Thumbnail(img, 300, 250, imgResizeFilter)
 						err = imaging.Save(thumbnail, thumbnailPath, imaging.JPEGQuality(80))
 						if err != nil {
 							return fmt.Errorf("failed to write thumbnail to %v: %w", thumbnailPath, err)
+						}
+
+						// Resize for lightbox
+						lightboxPath := path.Join(lightboxDirPath, file.Name())
+						log.Debug().Str("lightbox_path", lightboxPath).Msg("Generating and writing lightbox image")
+						lightbox := resizeFit(img, 1920, 1080, imgResizeFilter)
+						err = imaging.Save(lightbox, lightboxPath, imaging.JPEGQuality(80))
+						if err != nil {
+							return fmt.Errorf("failed to write thumbnail to %v: %w", thumbnailPath, err)
+						}
+
+						// Drop original file from output
+						if err = os.Remove(path.Join(outputBasePath, file.Name())); err != nil {
+							return fmt.Errorf("failed to delete image %v: %w", outputBasePath, err)
 						}
 						return nil
 					}
@@ -165,6 +187,27 @@ func processAanbodImages(isProd bool) func(data map[string]any) (map[string]any,
 		}
 		log.Info().Dur("duration_in_seconds", time.Since(start)).Msg("Processing images successful")
 		return data, nil
+	}
+}
+
+func resizeFit(img image.Image, maxWidth, maxHeight int, filter imaging.ResampleFilter) image.Image {
+	bounds := img.Bounds()
+	currWidth := bounds.Dx()
+	currHeight := bounds.Dy()
+	if currWidth > currHeight {
+		// Image is in landscape
+		if currWidth < maxWidth {
+			// Image is already smaller than max width
+			return img
+		}
+		return imaging.Resize(img, maxWidth, 0, filter)
+	} else {
+		// Image is in portret or square
+		if currHeight < maxHeight {
+			// Image is already smaller than max height
+			return img
+		}
+		return imaging.Resize(img, 0, maxHeight, filter)
 	}
 }
 

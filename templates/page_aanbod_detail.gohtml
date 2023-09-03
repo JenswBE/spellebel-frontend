@@ -33,18 +33,17 @@
     </div>
   </div>
   <div class="row g-4">
-    {{ $imgPath := pathJoin .Data.AanbodImgPath .RepeatedKey }}
-    {{ range readDir ( pathJoin "static" $imgPath ) }}
-      {{ if .IsDir }}
-        {{ continue }}
-      {{ end }}
+    {{ $imgBasePath := pathJoin .Data.AanbodImgPath .RepeatedKey }}
+    {{ $imgLightboxPath := pathJoin $imgBasePath "lightbox" }}
+    {{ $imgThumbnailPath := pathJoin $imgBasePath "thumbnail" }}
+    {{ range readDir ( pathJoin .Data.OutputPath $imgLightboxPath ) }}
       <div class="col-6 col-sm-4 col-md-3">
         <a
-          href="{{ pathJoin $imgPath .Name }}"
+          href="{{ pathJoin $imgLightboxPath .Name }}"
           data-toggle="lightbox"
           data-gallery="spellebel-gallery"
         >
-          <img src="{{ pathJoin $imgPath "thumbnail" .Name }}" class="img-fluid">
+          <img src="{{ pathJoin $imgThumbnailPath .Name }}" class="img-fluid">
         </a>
       </div>
     {{ end }}
