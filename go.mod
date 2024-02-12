@@ -1,6 +1,6 @@
 module github.com/JenswBE/spellebel-frontend
 
-go 1.21
+go 1.22
 
 require (
 	github.com/JenswBE/go-pipeline v1.0.0
