@@ -40,8 +40,7 @@
       <div class="col-6 col-sm-4 col-md-3">
         <a
           href="{{ pathJoin $imgLightboxPath .Name }}"
-          data-toggle="lightbox"
-          data-gallery="spellebel-gallery"
+          data-fslightbox
         >
           <img src="{{ pathJoin $imgThumbnailPath .Name }}" class="img-fluid">
         </a>
@@ -54,8 +53,8 @@
 <!-- Body end -->
 {{ define "base_body_end" }}
   <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/bs5-lightbox/1.8.3/index.bundle.min.js"
-    integrity="sha512-wOwwlvSeaATXscQHfDsAUnt3cBBvrKkyf7lI+k/88X6x/fxtc678fTdKRNcxZxtRdpzYFiIqqW5uIRUiPlZJlw=="
+    src="https://cdnjs.cloudflare.com/ajax/libs/fslightbox/3.4.1/index.min.js"
+    integrity="sha512-BD6B4tou7H7CWpfaXthxgqwk7kHs/rPDEk9GD/Rvbx0sCOUdqtrvlBP/o64EmdP5lnGOS4j4FTcn0iPJx6bVCw=="
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   ></script>
