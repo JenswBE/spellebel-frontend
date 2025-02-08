@@ -101,6 +101,8 @@ func main() {
 		LoadRenderSingle("page_spulmer-worden.gohtml", "spulmer-worden/index.html").
 		SetData("CurrentNavLink", "AGENDA").
 		LoadRenderSingle("page_agenda.gohtml", "agenda/index.html").
+		SetData("CurrentNavLink", "REGLEMENT").
+		LoadRenderSingle("page_reglement.gohtml", "agenda/index.html").
 		SetData("CurrentNavLink", "CONTACT").
 		LoadRenderSingle("page_contact.gohtml", "contact/index.html").
 		Must()
