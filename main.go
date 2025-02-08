@@ -84,7 +84,7 @@ func main() {
 			{Title: "AANBOD", Link: "/aanbod/"},
 			{Title: "WIE ZIJN WIJ?", Link: "/wie-zijn-wij/"},
 			{Title: "AGENDA", Link: "/agenda/"},
-			{Title: "REGLEMENT", Link: "/reglement/"},
+			{Title: "REGLEMENT", Link: "/reglement/"}, // Toegevoegd door Mark
 			{Title: "CONTACT", Link: "/contact/"},
 		}).
 		LoadRenderSingle("page_404.gohtml", "404.html").
@@ -102,7 +102,7 @@ func main() {
 		SetData("CurrentNavLink", "AGENDA").
 		LoadRenderSingle("page_agenda.gohtml", "agenda/index.html").
 		SetData("CurrentNavLink", "REGLEMENT").
-		LoadRenderSingle("page_reglement.gohtml", "agenda/index.html").
+		LoadRenderSingle("page_reglement.gohtml", "reglement/index.html").
 		SetData("CurrentNavLink", "CONTACT").
 		LoadRenderSingle("page_contact.gohtml", "contact/index.html").
 		Must()
