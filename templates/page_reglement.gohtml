@@ -1,0 +1,24 @@
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
+
+<!-- Title -->
+{{ define "title" }}Reglement{{ end }}
+
+<!-- Body content -->
+{{ define "base_content" }}
+<div class="container pt-3 pb-5">
+  <div class="row g-4">
+    <div class="col-12">
+        <h1 class="pb-3"><span class="spellebel-title">Reglement</span></h1>
+        <p>
+          We herwerkten ons reglement in januari 2025. De meeste recente versie kan u <a href="/assets/img/documenten/Reglement.pdf">hier</a> vinden.
+        </p>
+        <p>
+          Om het voor jullie overzichtelijk te houden, maakten we ook een korte versie van ons reglement.<br>
+          Ook hiervan kan u meest recente versie <a href="/assets/img/documenten/Reglement_kort.pdf">hier</a> vinden.
+        </p>
+    </div>
+    
+  </div>
+</div>
+{{ end }}
