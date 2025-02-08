@@ -84,6 +84,7 @@ func main() {
 			{Title: "AANBOD", Link: "/aanbod/"},
 			{Title: "WIE ZIJN WIJ?", Link: "/wie-zijn-wij/"},
 			{Title: "AGENDA", Link: "/agenda/"},
+			{Title: "REGLEMENT", Link: "/reglement/"},
 			{Title: "CONTACT", Link: "/contact/"},
 		}).
 		LoadRenderSingle("page_404.gohtml", "404.html").
