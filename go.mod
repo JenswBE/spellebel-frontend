@@ -7,7 +7,7 @@ toolchain go1.23.2
 require (
 	github.com/JenswBE/go-pipeline v1.0.0
 	github.com/disintegration/imaging v1.6.2
-	github.com/rs/zerolog v1.33.0
+	github.com/rs/zerolog v1.34.0
 	github.com/samber/lo v1.49.1
 	golang.org/x/sync v0.12.0
 )
