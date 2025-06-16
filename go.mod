@@ -8,7 +8,7 @@ require (
 	github.com/JenswBE/go-pipeline v1.0.0
 	github.com/disintegration/imaging v1.6.2
 	github.com/rs/zerolog v1.34.0
-	github.com/samber/lo v1.50.0
+	github.com/samber/lo v1.51.0
 	golang.org/x/sync v0.15.0
 )
 
