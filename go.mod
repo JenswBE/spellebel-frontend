@@ -2,7 +2,7 @@ module github.com/JenswBE/spellebel-frontend
 
 go 1.23.0
 
-toolchain go1.23.2
+toolchain go1.25.4
 
 require (
 	github.com/JenswBE/go-pipeline v1.0.0
