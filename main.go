@@ -138,10 +138,12 @@ func processAanbodImages(isProd bool) func(data map[string]any) (map[string]any,
 			srcDirPath := path.Join("static", aanbodImgPath, k)
 			outputBasePath := path.Join(outputPath, aanbodImgPath, k)
 			thumbnailDirPath := path.Join(outputBasePath, "thumbnail")
+			// #nosec G301 -- Website is public
 			if err := os.MkdirAll(thumbnailDirPath, os.ModePerm); err != nil {
 				return nil, fmt.Errorf("failed to create directory %v: %w", thumbnailDirPath, err)
 			}
 			lightboxDirPath := path.Join(outputBasePath, "lightbox")
+			// #nosec G301 -- Website is public
 			if err := os.MkdirAll(lightboxDirPath, os.ModePerm); err != nil {
 				return nil, fmt.Errorf("failed to create directory %v: %w", lightboxDirPath, err)
 			}
