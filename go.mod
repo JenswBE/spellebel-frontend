@@ -1,13 +1,13 @@
 module github.com/JenswBE/spellebel-frontend
 
-go 1.25.5
+go 1.26.0
 
 require (
 	github.com/JenswBE/go-pipeline v1.0.0
 	github.com/disintegration/imaging v1.6.2
 	github.com/rs/zerolog v1.35.1
 	github.com/samber/lo v1.53.0
-	golang.org/x/sync v0.22.0
+	golang.org/x/sync v0.23.0
 )
 
 require (
