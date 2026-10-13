@@ -7,7 +7,7 @@ require (
 	github.com/disintegration/imaging v1.6.2
 	github.com/rs/zerolog v1.35.1
 	github.com/samber/lo v1.53.0
-	golang.org/x/sync v0.23.0
+	golang.org/x/sync v0.24.0
 )
 
 require (
