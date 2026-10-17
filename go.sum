@@ -1,5 +1,7 @@
 github.com/JenswBE/go-pipeline v1.0.0 h1:pCCSRSgDUNXiix02Z68YB8fi+EneP3erprSo+w1w+CY=
 github.com/JenswBE/go-pipeline v1.0.0/go.mod h1:HZ9RRXq9hVqnglXFfHFOnqTrNBYjjy5Soh7CRbaNRLI=
+github.com/JenswBE/go-pipeline v1.1.0 h1:P/xKHUXRiEF3U3lwejvjnpc5VTe0iOyLCV+WaRN9nx0=
+github.com/JenswBE/go-pipeline v1.1.0/go.mod h1:cvGCgrKK9sx/LS8xyocLHKTw4E2sc1tbceh7Bqjx630=
 github.com/disintegration/imaging v1.6.2 h1:w1LecBlG2Lnp8B3jk5zSuNqd7b4DXhcjwek1ei82L+c=
 github.com/disintegration/imaging v1.6.2/go.mod h1:44/5580QXChDfwIclfc/PCwrr44amcmDAg8hxG0Ewe4=
 github.com/mattn/go-colorable v0.1.15 h1:+u9SLTRGnXv73cEsnsmoZBom+dMU88B2M0aDcWy0/jY=
